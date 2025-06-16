@@ -1,13 +1,12 @@
-import '../Styles/nav.css'
-
-function Nav() {
+import '../Styles/header.css'
+import mlogo from '../assets/Logo.svg'
+function Header() {
 
   return (    
-    <>
-    <h1 className="font-bebas ">MONTESSERATfont font </h1>
-<p className="font-montserrat">MONTESSERATfont</p>
-    </>
+  <nav>
+    
+  </nav>
   )
 }
 
-export default Nav
+export default Header
