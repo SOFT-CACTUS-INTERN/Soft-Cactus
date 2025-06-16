@@ -4,7 +4,8 @@ function Nav() {
 
   return (    
     <>
-    <h1>nav</h1>
+    <h1 className="font-bebas ">MONTESSERATfont font </h1>
+<p className="font-montserrat">MONTESSERATfont</p>
     </>
   )
 }

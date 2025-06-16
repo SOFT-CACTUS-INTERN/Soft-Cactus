@@ -4,7 +4,6 @@ import './App.css'
 import Nav from './Components/nav'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     
