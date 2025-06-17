@@ -1,5 +1,5 @@
 import React from 'react'
-import head from '../Styles/header.module.css'
+import head from '/src/Styles/header.module.css'
 import mlogo from '../assets/Logo.svg'
 import {Link} from "react-router-dom";
 import Logo from "../assets/Logo.svg"
@@ -14,7 +14,7 @@ function Header() {
       </div>
       <div className={head.links}>
             <ul>
-              <li><Link to="/">Accueil</Link></li>
+              <li><Link to="/" className="">Accueil</Link></li>
               <li><Link to="/agence">Nos agence</Link></li>
               <li><Link to="/services">Nos services</Link></li>
               <li><Link to="/projets">Nos projets</Link></li>
