@@ -1,6 +1,22 @@
+/*GLOBAL CSS*/
+
+/*Declaring global css colors variables*/
+:root{
+  --lpurple:#9D04D3;
+  --mpurple:#5911AA;
+  --dpurple:#3C096C;
+  --mainYellow:#FEBB08;
+}
+*{
+  font-family: "Montserrat","Bebas Neue",Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
 
 body{
-    font-family: "Montserrat","Bebas Neue",Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgb(243, 229, 255),#ffffff);
+    background-attachment: fixed; /* Prevents repeating when scrolling */
+    
 }
 .font-bebas {
   font-family: "Bebas Neue";
