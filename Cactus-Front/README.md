@@ -9,3 +9,6 @@ Got rid of tailwind, will use css modules instead for full control
 so ' 1- ' is off
 framer motion for animating
 
+---------------------------------------------------------------------
+You can see the routing in App.jsx I USED A Layout page with Outlet from react-router-dom that I installed using npm install 
+
