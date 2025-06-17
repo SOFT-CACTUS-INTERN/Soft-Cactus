@@ -1,16 +1,26 @@
-import { useState } from 'react'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Accueil from "./pages/Accueil";
+import Agence from "./pages/Agence";
+import Projets from "./pages/Projets";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Nopage from "./pages/Nopage";
 
-import './App.css'
-import Nav from './Components/nav'
-
-function App() {
-
+export default function App() {
   return (
-    
-    <>
-      <Nav />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Accueil />} />
+          <Route path="Agence" element={<Agence />} />
+          <Route path="Projets" element={<Projets />} />
+          <Route path="Services" element={<Services />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<Nopage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
