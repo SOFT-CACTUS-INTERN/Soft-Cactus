@@ -1,10 +1,14 @@
 import React from 'react'
 import head from '/src/Styles/header.module.css'
-import mlogo from '../assets/Logo.svg'
+
 import {Link} from "react-router-dom";
 import Logo from "../assets/Logo.svg"
-
+import { useState } from "react";
+import { NavLink } from 'react-router-dom';
 function Header() {
+
+
+
 
   return (        
   <header className={head.head}>
@@ -14,11 +18,11 @@ function Header() {
       </div>
       <div className={head.links}>
             <ul>
-              <li><Link to="/" className="">Accueil</Link></li>
-              <li><Link to="/agence">Nos agence</Link></li>
-              <li><Link to="/services">Nos services</Link></li>
-              <li><Link to="/projets">Nos projets</Link></li>
-              <li><Link to="/contact">contact</Link></li>
+                <li><NavLink to="/"     className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Accueil</NavLink></li>
+                <li><NavLink to="/agence" className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Nos agence</NavLink></li>
+                <li><NavLink to="/services"className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Nos services</NavLink></li>
+                <li><NavLink to="/projets" className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Nos projets</NavLink></li>
+                <li><NavLink to="/contact" className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>contact</NavLink></li>
             </ul>
       </div>
       <div className={head.button}>

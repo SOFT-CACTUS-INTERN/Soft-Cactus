@@ -1,44 +1,72 @@
 .head{
     font-family: "Bebas Neue" ;
     font-weight: 400;
-    margin: 50px 100px;
+    margin-top: 3%;
 }
 .navbar{
     display: flex;
     flex-direction: row;
-    gap: 50px;
     align-items:center;
-    justify-content: space-between;
-    width: 100%;
-    margin: auto;
+    justify-content: space-around;
+    
+    margin: 0 20px;
 }
-.logo{
-    width: 200px;
+
+.head .navbar .logo img{
+    max-width: 180px;
+    height: auto;
 }
+
 .links{
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 10px;
+    margin: 0 20px; /*so they can never stick (logo nav and button)*/
 }
 .links ul{
     display: flex;
     flex-direction: row;
     padding: 20px;
     list-style: none;
+    
 }
-.links ul li a{
+
+.links ul li .navlink{
     font-family: "Bebas Neue" ;
     color: rgba(137, 135, 161, 1);
     text-decoration: none;
     font-size: 18px;
     margin: 0 1.5em;
+    position: relative;
 }
-.links ul li a:hover{
+.navlink.active {
+  color:#5A00C7 !important;
+  border-bottom: 2px solid #FFC300; 
+}
+
+.links ul li .navlink:hover{
     color:#5A00C7;
-    transition: color .2s ease;
+    transition: width 0.3s ease; 
+}
+.navlink::after{
+    content: ' ';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFC300;
+    transition: width 150ms linear; 
+}
+.navlink:hover::after{
+    content: ' ';
+    width: 100%;
 }
 
 .button button{
+cursor: pointer;
+height:auto;
+max-width: 150px;
 font-family: "Bebas Neue" ;
 font-size: 20px;
 color: #ffffff;
@@ -47,9 +75,6 @@ border: 1px solid #ffffff ;
 border-radius: 10px;
 padding:  15px 30px;
 }
-
-
-
 
 
 

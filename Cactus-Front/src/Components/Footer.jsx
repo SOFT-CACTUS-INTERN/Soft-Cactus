@@ -11,25 +11,29 @@ const Footer = () => {
                <p>Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring your vision to life.</p>
                <div className={foot.slogan}>YOU ARE NOT ALONE</div>
          </div>
-        
+        <div className={foot.line} />
          <div className={foot.B2}>
             <div className={foot.links}>
                <ul>
-                  <li><Link to="/" className="">Accueil</Link></li>
+                  <li><Link to="/">Accueil</Link></li>
                   <li><Link to="/agence">Nos agence</Link></li>
                   <li><Link to="/services">Nos services</Link></li>
                   <li><Link to="/projets">Nos projets</Link></li>
                   <li><Link to="/contact">contact</Link></li>
                   </ul>
             </div>
-            <div >
-               <div>
-                  <div><img src="/src/assets/icons/phone.svg" alt="num : " /><p>+212 648 927 820</p></div>
-                  <div><img src="/src/assets/icons/email.svg" alt="email : " /><p>contact@softcactus.ma</p></div>
+
+            <div  className={foot.coordonnes}>
+               <div className={foot.contactContainer}>
+                  <p className={foot.contactItem} ><img src="/src/assets/icons/phone.svg" alt="num : " /><a href="tel:+212 648 927 820">+212 648 927 820</a></p>
+                  <p className={foot.contactItem}><img src="/src/assets/icons/email.svg" alt="email : " /><a href="mailto:contact@softcactus.ma">contact@softcactus.ma</a></p>
                </div>
-               <div ><img src="/src/assets/icons/localisation.svg" alt="Local Oujda : " /><p>6 éme Etg, Immeuble EL MOHANDISSINE, Rue Ibn Rochd، Oujda</p></div>
-               <div ><img src="/src/assets/icons/localisation.svg" alt="Local Casa : " /><p>Etage 1, Angle Mustapha El Màani, Centre Riad, 61, N°39 Av. Lalla Yacout, Casablanca </p></div>
+               
+                  <p className={foot.contactItem}><img src="/src/assets/icons/localisation.svg" alt="Local Oujda : " />6 éme Etg, Immeuble EL MOHANDISSINE, Rue Ibn Rochd، Oujda</p>
+                  <p className={foot.contactItem}><img src="/src/assets/icons/localisation.svg" alt="Local Casa : " />Etage 1, Angle Mustapha El Màani, Centre Riad, 61, N°39 Av. Lalla Yacout, Casablanca </p>
+               
             </div>
+
             <div className={foot.SMlinks}>
                <a href="#"><img src="/src/assets/icons/instagram.svg" alt="instagram" /></a>
                <a href="#"><img src="/src/assets/icons/linkedin.svg" alt="linkedin" /></a>
