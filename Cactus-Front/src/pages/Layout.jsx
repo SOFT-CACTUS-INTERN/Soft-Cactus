@@ -5,11 +5,15 @@ import { Outlet} from "react-router-dom";
 const Layout = () => {
  return (
     <>
-        <Header  /> 
+        <header>
+            <Header  /> 
+        </header>
         <main>      {/*  only added <main> <main /> for semantic html */}
-            <Outlet />  {/*  used to nest routes and placeholder for other components to render not the whole page*/}
+            <Outlet  />  {/*  used to nest routes and placeholder for other components to render not the whole page*/}
         </main>
-        <Footer />
+        <footer>
+            <Footer />
+        </footer>
     </>
  )
 }

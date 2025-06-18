@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
  return (
-   <footer className={foot.footer}>
+   <div className={foot.footer}>
       <div className={foot.A1}>
          <div className={foot.B1}>
                <img src="/src/assets/Logofill.svg" alt="SoftCactus" />
@@ -43,7 +43,7 @@ const Footer = () => {
          </div>
       </div>
       <div className={foot.A2}>Tous les droits sont réservés pour SOFT CACTUS 2018-2025</div>
-   </footer> 
+   </div> 
 
  )
 }

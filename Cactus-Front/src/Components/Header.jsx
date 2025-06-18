@@ -11,7 +11,6 @@ function Header() {
 
 
   return (        
-  <header className={head.head}>
     <nav className={head.navbar}>
       <div className={head.logo}>
           <Link to="/"><img src={Logo} alt="SoftCactus" /></Link>
@@ -31,7 +30,7 @@ function Header() {
       </div>
       
     </nav>
-  </header>
+  
   )
 }
 

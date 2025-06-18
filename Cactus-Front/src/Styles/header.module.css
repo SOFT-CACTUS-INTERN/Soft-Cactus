@@ -1,8 +1,7 @@
-.head{
-    font-family: "Bebas Neue" ;
-    font-weight: 400;
-}
 .navbar{
+        font-family: "Bebas Neue" ;
+    font-weight: 400;
+
     display: flex;
     flex-direction: row;
     align-items:center;
