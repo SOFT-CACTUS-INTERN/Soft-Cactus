@@ -1,15 +1,13 @@
 .head{
     font-family: "Bebas Neue" ;
     font-weight: 400;
-    margin-top: 3%;
 }
 .navbar{
     display: flex;
     flex-direction: row;
     align-items:center;
     justify-content: space-around;
-    
-    margin: 0 20px;
+    padding:15px 20px;
 }
 
 .head .navbar .logo img{
@@ -28,7 +26,6 @@
     flex-direction: row;
     padding: 20px;
     list-style: none;
-    
 }
 
 .links ul li .navlink{
@@ -38,6 +35,7 @@
     font-size: 18px;
     margin: 0 1.5em;
     position: relative;
+    white-space: nowrap; /*precaution so text don't break*/
 }
 .navlink.active {
   color:#5A00C7 !important;
@@ -63,9 +61,9 @@
     width: 100%;
 }
 
-.button button{
-cursor: pointer;
-height:auto;
+.button a{
+white-space: nowrap; 
+text-decoration: none;
 max-width: 150px;
 font-family: "Bebas Neue" ;
 font-size: 20px;
@@ -77,4 +75,10 @@ padding:  15px 30px;
 }
 
 
-
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

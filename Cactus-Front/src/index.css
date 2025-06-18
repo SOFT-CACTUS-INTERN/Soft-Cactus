@@ -16,6 +16,7 @@
 body{
     background-image: linear-gradient(rgb(243, 229, 255),#ffffff);
     background-attachment: fixed; /* Prevents repeating when scrolling */
+    min-height: 100vh;
 }
 .font-bebas {
   font-family: "Bebas Neue";

@@ -26,8 +26,10 @@ function Header() {
             </ul>
       </div>
       <div className={head.button}>
-          <button>nos marks</button>    
+          <a href="#">nos marks</a> 
+          {/* to which route it takes? a new page ?   */}
       </div>
+      
     </nav>
   </header>
   )

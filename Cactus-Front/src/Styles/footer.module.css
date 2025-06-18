@@ -13,7 +13,7 @@
     border: 1px solid #D6DDED;
     border-radius: 28px;
     display: flex;
-    
+    gap: 2.5rem;
     align-items: center;
     padding: 3.5em;
 }
@@ -40,7 +40,7 @@
 .line {
     height: 188.5px;
     border-left: 1px solid #D6DDED;
-    margin: 0 6em;
+    /* margin: 0 6em; */
 }
 
 .B2{
