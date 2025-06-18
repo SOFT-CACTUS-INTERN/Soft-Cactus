@@ -1,31 +1,6 @@
 import React from 'react'
 import foot from '/src/Styles/footer.module.css'
-/*
-const Footer = () => {
- return (
-   <footer className={foot.footer}>
-      <div className={foot.goup1}>
-            <div className={foot.logo}></div>
-            <div className={foot.description}></div>
-            <div className={foot.slogan}></div>
-      </div>
-      <div className={foot.line}>
-
-      </div>
-      <div className={foot.group2}>
-            <div className={foot.links}></div>
-            <div className={foot.coordonnes}>
-               <div className={foot.num-email}><div></div><div></div></div>
-               <div className={foot.localOujda}></div>
-               <div className={foot.localCasa}></div>
-            </div>
-            <div className={foot.icons}></div>
-      </div>
-   </footer> 
-
- )
-}
-*/
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
  return (
@@ -36,9 +11,7 @@ const Footer = () => {
                <p>Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring your vision to life.</p>
                <div className={foot.slogan}>YOU ARE NOT ALONE</div>
          </div>
-         <div className={foot.line}>
-
-         </div>
+        
          <div className={foot.B2}>
             <div className={foot.links}>
                <ul>

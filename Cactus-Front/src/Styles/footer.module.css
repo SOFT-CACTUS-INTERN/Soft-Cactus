@@ -5,9 +5,7 @@
     display: flex;
     gap: 2em;
 }
-.A1 .B1 img{
-    /*fixer width et height de l'image ?*/
-}
+
 .A1 .B1 p{
     font-size: 15; /*tester*/
     color: #938697;
