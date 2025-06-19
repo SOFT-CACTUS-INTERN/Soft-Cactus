@@ -18,6 +18,9 @@ body{
     background-attachment: fixed; /* Prevents repeating when scrolling */
     min-height: 100vh;
 }
+.bodyLock {
+  overflow: hidden;
+}
 .font-bebas {
   font-family: "Bebas Neue";
 }

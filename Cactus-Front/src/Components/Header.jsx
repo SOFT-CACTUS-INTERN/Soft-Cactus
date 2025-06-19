@@ -3,11 +3,22 @@ import head from '/src/Styles/header.module.css'
 
 import {Link} from "react-router-dom";
 import Logo from "../assets/Logo.svg"
-import { useState } from "react";
+import { useState,useEffect} from "react";
 import { NavLink } from 'react-router-dom';
 function Header() {
 
-  const [isOpen,setOpen]=useState(false);
+  const [isOpen, setIsMobileMenuOpen] = useState(false);
+   const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isOpen);
+  };
+  useEffect(() => {
+  if (isOpen) {
+    document.body.classList.add('bodyLock');
+  } else {
+    document.body.classList.remove('bodyLock');
+  }
+}, [isOpen]);
+
 
   return (        
     <nav>
@@ -31,25 +42,33 @@ function Header() {
       </div>
       </div>
 
-      <div className="nav-bar-mobile" >
-        <img src="/src/assets/Logo.svg" alt="SoftCactus" />
-        <div className={`${head.hamburger} ${isOpen ? head.active : ""}`} 
-  onClick={() => setOpen(!isOpen)}>
-            <div className={head.Line}></div>
-            <div className={head.Line}></div>
-            <div className={head.Line}></div>
-        </div>
-        <div class="logo2 show">
+
+      <div className={head.navBarMobile}>
+        <img src={Logo} alt="SoftCactus" />
+        <button className={head.menuBtn} onClick={toggleMobileMenu}>
+          <div className={`${head.hamburger} ${isOpen ? head.active : ""}`}>
+              <div className={head.Line}></div>
+              <div className={head.Line}></div>
+              <div className={head.Line}></div>
+          </div>
+        </button>
+        <div className={`${head.burgerlist} ${isOpen ? head.open : ""}`}>
+            <div className={head.fullMenu}>
+              <ul>
+                  <li><NavLink to="/" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}        onClick={toggleMobileMenu}>Accueil</NavLink></li>
+                  <li><NavLink to="/agence" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}  onClick={toggleMobileMenu}>Nos agence</NavLink></li>
+                  <li><NavLink to="/services"className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink} onClick={toggleMobileMenu}>Nos services</NavLink></li>
+                  <li><NavLink to="/projets" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}  onClick={toggleMobileMenu}>Nos projets</NavLink></li>
+                  <li><NavLink to="/contact" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}  onClick={toggleMobileMenu}>contact</NavLink></li>
+              </ul>
+            </div>
         </div>
     </div>
-
-    <div className={`${head.Dropdown} ${isOpen ? head.dropdownActive : head.Dropdown}`}>
-        <h1>hello Dropdown</h1>
-      </div>
-
     </nav>
-  
   )
 }
 
 export default Header
+
+
+  
