@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    gap: 2em;
+    padding: 2em 0;
+    
 }
 
 .A1{
@@ -17,6 +18,12 @@
     gap: 2.5rem;
     align-items: center;
     padding: 3.5em;
+
+    /*For mobile or small viewwidths what about :
+        flex-wrap:wrap
+        height auto
+        and maybe have these option only if it is less than 760px
+        or maybe have another footer for mobile*/
 }
 .A1 .B1{
     display: flex;
@@ -96,7 +103,6 @@
 
 .A2{
     text-transform: uppercase;
-    margin: 2em 0;
     text-align: center;
     font-weight: 500;
 }

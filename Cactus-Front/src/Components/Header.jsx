@@ -7,11 +7,11 @@ import { useState } from "react";
 import { NavLink } from 'react-router-dom';
 function Header() {
 
-
-
+  const [isOpen,setOpen]=useState(false);
 
   return (        
-    <nav className={head.navbar}>
+    <nav>
+    <div className={head.navbar}>
       <div className={head.logo}>
           <Link to="/"><img src={Logo} alt="SoftCactus" /></Link>
       </div>
@@ -25,10 +25,28 @@ function Header() {
             </ul>
       </div>
       <div className={head.button}>
-          <a href="#">nos marks</a> 
-          {/* to which route it takes? a new page ?   */}
+        <Link to="/">{/* to which route it takes? a new page ?   */}
+          <button>nos marks</button>
+        </Link>
       </div>
-      
+      </div>
+
+      <div className="nav-bar-mobile" >
+        <img src="/src/assets/Logo.svg" alt="SoftCactus" />
+        <div className={`${head.hamburger} ${isOpen ? head.active : ""}`} 
+  onClick={() => setOpen(!isOpen)}>
+            <div className={head.Line}></div>
+            <div className={head.Line}></div>
+            <div className={head.Line}></div>
+        </div>
+        <div class="logo2 show">
+        </div>
+    </div>
+
+    <div className={`${head.Dropdown} ${isOpen ? head.dropdownActive : head.Dropdown}`}>
+        <h1>hello Dropdown</h1>
+      </div>
+
     </nav>
   
   )

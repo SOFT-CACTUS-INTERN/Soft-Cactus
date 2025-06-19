@@ -60,9 +60,8 @@
     width: 100%;
 }
 
-.button a{
-white-space: nowrap; 
-text-decoration: none;
+.button button{
+cursor: pointer;
 max-width: 150px;
 font-family: "Bebas Neue" ;
 font-size: 20px;
@@ -73,11 +72,45 @@ border-radius: 10px;
 padding:  15px 30px;
 }
 
-
-@media (max-width: 1000px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+.nav-bar-mobile{
+    display: none;
   }
+@media (max-width: 1000px) {
+  .navbar{
+    display: none;
+  }
+  .nav-bar-mobile{
+    display: block;
+  }
+  .hamburger .Line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+  }
+  .hamburger{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+ .active .Line:first-of-type{
+    transform :rotate(45deg) translate(5px, 5px)
+}
+.active .Line:nth-of-type(2){
+ opacity: 0;
+}
+ .active .Line:last-of-type {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+.Dropdown{
+    display: none;
+}
+.dropdownActive{
+    display: block;
+}
+
 }
