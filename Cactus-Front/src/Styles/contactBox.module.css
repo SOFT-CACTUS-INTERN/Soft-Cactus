@@ -1,0 +1,118 @@
+.box{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(227, 219, 216, 1);
+    border-radius: 23.2px;
+    position: relative;
+    
+}
+.title{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    transform: translateY(-50%); /*solved the resposive issue*/
+    z-index: -1;
+
+    background-image: linear-gradient(to bottom,#5A00C7, #AA74EB);
+    color: transparent;
+    background-clip: text;
+}
+
+.title p{
+    font-size: 8.5vw;
+    font-family:"Bebas Neue" ;
+    text-align: center;   
+    white-space: nowrap;
+}
+.bigC{
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+}
+.content{
+    padding: 2em 3em;
+}
+
+.myform{
+    color: #310566;
+    line-height: 42px;
+    font-size: 22.74px;
+    font-weight: 500;
+    padding-top: 2em;
+}
+.myform form input{
+    outline: none;
+    border-left: hidden;
+    border-right: hidden;
+    border-top: hidden;
+    border-bottom: 1px solid #310566;
+    background-color: transparent;
+    color: #00000066;
+    line-height: 42px;
+    font-size: 22.74px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.bouton{
+    padding:  1.5em 0;
+}
+
+.myform form button{
+    cursor: pointer;
+    font-family: "Bebas Neue";
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 0.5em;
+    border: hidden;
+    background-image: linear-gradient(to right,#9D04D2,#7E01AA);
+}
+.coordonnes{
+    padding: 4em 0;
+    width: 70%;
+}
+.coordonnes p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #310566;
+    padding: 0.7em 0;
+}
+.coordonnes p img{
+    padding: 0 5px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+ .coordonnes img{
+    margin-right: 10px;
+}
+ .coordonnes .contactItem{
+  display: inline-block;
+}
+ .coordonnes .contactContainer p {
+    white-space: nowrap;
+}
+ .coordonnes P a{
+    text-decoration: none;
+    color: #310566;
+    font-weight: 500;
+}
+
+@media (max-width: 550px) {
+.myform{
+    font-size: 18px;
+}
+  .coordonnes p{
+    font-size: 14px;
+  }
+  .myform form input{
+    font-size: 14px;
+  }
+}
+
+

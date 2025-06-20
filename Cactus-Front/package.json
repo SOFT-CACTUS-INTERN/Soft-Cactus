@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-hookz/web": "^25.1.1",
+    "@react-spring/web": "^10.0.1",
+    "@uidotdev/usehooks": "^2.4.1",
+    "framer-motion": "^12.18.1",
+    "motion": "^12.18.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2"

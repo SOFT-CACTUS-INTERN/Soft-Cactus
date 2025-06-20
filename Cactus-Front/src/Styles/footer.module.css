@@ -104,8 +104,12 @@
 }
 .B2 .coordonnes .contactItem{
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 2rem; 
+}
+.B2 .coordonnes .contactItem img{
+    vertical-align: middle;
+}
+.B2 .coordonnes .contactContainer p {
+    padding-right: 10px;
 }
 .B2 .SMlinks a{
     margin-right: 9px;
@@ -115,6 +119,10 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
+}
+.localIcon{
+    width: 13px;
+    height: 17px;
 }
 @media (max-width: 1000px) {
     .footer{

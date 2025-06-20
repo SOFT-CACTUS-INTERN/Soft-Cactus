@@ -1,10 +1,11 @@
 import React from 'react'
 import head from '/src/Styles/header.module.css'
-
+import { motion } from "framer-motion";
 import {Link} from "react-router-dom";
 import Logo from "../assets/Logo.svg"
 import { useState,useEffect} from "react";
 import { NavLink } from 'react-router-dom';
+
 function Header() {
 
   const [isOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ function Header() {
       </div>
       <div className={head.button}>
         <Link to="/">{/* to which route it takes? a new page ?   */}
-          <button>nos marks</button>
+          <motion.button >nos marks</motion.button>
         </Link>
       </div>
       </div>

@@ -3,12 +3,14 @@ import foot from '/src/Styles/footer.module.css'
 import { Link } from 'react-router-dom'
 import phone from "/src/assets/icons/phone.svg"
 import email from "/src/assets/icons/email.svg"
+import localisation from "/src/assets/icons/localisation.svg"
 // import localisation from "/src/assets/icons/localisation.svg"
 import igIcon from '/src/assets/icons/instagram.svg'
 import linkedinIcon from "/src/assets/icons/linkedin.svg"
 import tiktokIcon from "/src/assets/icons/tiktok.svg"
 import fbIcon from "/src/assets/icons/facebook.svg"
 import Logo2 from "/src/assets/Logofill.svg"
+
 const Footer = () => {
  return (
    <div className={foot.footer}>
@@ -35,11 +37,9 @@ const Footer = () => {
                <div className={foot.contactContainer}>
                   <p className={foot.contactItem} ><img src={phone} alt="num : " /><a href="tel:+212 648 927 820">+212 648 927 820</a></p>
                   <p className={foot.contactItem}><img src={email} alt="email : " /><a href="mailto:contact@softcactus.ma">contact@softcactus.ma</a></p>
-               </div>
-               
-                  <p className={foot.contactItem}><img src="" alt="Local Oujda : " />6 éme Etg, Immeuble EL MOHANDISSINE, Rue Ibn Rochd، Oujda</p>
-                  <p className={foot.contactItem}><img src="" alt="Local Casa : " />Etage 1, Angle Mustapha El Màani, Centre Riad, 61, N°39 Av. Lalla Yacout, Casablanca </p>
-               
+               </div>           
+                  <p className={foot.contactItem}><img src={localisation} className={foot.localIcon} alt="Local Oujda : " />6 éme Etg, Immeuble EL MOHANDISSINE, Rue Ibn Rochd، Oujda</p>
+                  <p className={foot.contactItem}><img src={localisation} className={foot.localIcon} alt="Local Casa : " />Etage 1, Angle Mustapha El Màani, Centre Riad, 61, N°39 Av. Lalla Yacout, Casablanca </p>
             </div>
 
             <div className={foot.SMlinks}>
