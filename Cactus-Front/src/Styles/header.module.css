@@ -56,7 +56,7 @@
     transition: width 150ms linear; 
 }
 .navlink:hover::after{
-    content: ' ';
+  content: ' ';
     width: 100%;
 }
 
@@ -127,8 +127,10 @@ padding:  15px 30px;
   bottom: 0;
   width: 100%; 
   overflow-y: auto;
-  background-color: #e9dede;
+  background-color: rgba(244,231,255,0.3);
+  backdrop-filter: blur(12px);
   transition: background-color .25s;
+  z-index: 100000;
 }
 .fullMenu{
   margin: 0 auto;
@@ -150,7 +152,11 @@ padding:  15px 30px;
   text-decoration: none;
   font-size: 28px;
   font-weight: 500;
+  color: #8987A1;
   padding-bottom:10px ;
+}
+.fullMenu ul li a:hover{
+  color: #5A00C7;
 }
 .fullMenu ul li a::after{
   content: ' ';
@@ -167,7 +173,7 @@ padding:  15px 30px;
     width: 100%;
 }
 .mobileActive{
-  color:red !important;
+  color:#5A00C7 !important;
   border-bottom: 2px #FFC300 solid;
 }
 
