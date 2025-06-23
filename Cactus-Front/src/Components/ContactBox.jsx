@@ -21,12 +21,12 @@ const ContactBox = ()=>{
                     <div className={contactBox.myform}>
                         <form method='POST' name='form' encType='text/plain'>
                             <label htmlFor="fullName">Bonjour, je m'appelle </label>
-                            <input type="text" name="nom" id="fullName" size="18" placeholder=' Nom et prénom ' />
+                            <input type="text" name="fullName" id="fullName" size="18" placeholder=' Nom et prénom ' />
                             <label htmlFor="societyName">et je représente la société </label>
-                            <input type="text" name="nom" id="societyName" size="14" placeholder=' Nom de la société '/>
-                                je vous contacte pour voir avec vous la possibilité de collaborer sur
+                            <input type="text" name="societyName" id="societyName" size="14" placeholder=' Nom de la société '/>
+                                <p>je vous contacte pour voir avec vous la possibilité de collaborer sur</p>
                             <label htmlFor="projectName"> un projet de</label>
-                            <input type="text" name="nom" id="projectName" size="12" placeholder='Nom du projet' />
+                            <input type="text" name="projectName" id="projectName" size="12" placeholder='Nom du projet' />
                             <label htmlFor="email">vous pouvez me contacter sur </label>
                             <input type="email" name="email" id="email"  placeholder='Adresse email'/> ou 
                             <input type="tel" name="number" id="number" size="16" placeholder='Numéro de téléphone'/>
@@ -55,8 +55,3 @@ const ContactBox = ()=>{
     )
 };
 export default ContactBox
-/*Bonjour, je m’appelle Nom et prénom et je représente 
-la société Nom de la société je vous contacte pour
- voir avec vous la possibilité de collaborer sur
-  un projet de Nom du projet  vous pouvez me contacter sur 
- Adresse email  ou Numéro de téléphone */

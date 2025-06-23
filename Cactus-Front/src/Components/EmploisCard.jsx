@@ -11,7 +11,8 @@ const EmploisCard = ()=>{
                     <p><a href="tel:+212 664 363 040">+212 664 363 040</a></p>
                     <p><a href="mailto:servicecommercial@softcactus.ma">servicecommercial@softcactus.ma</a></p>
                 </div>
-                <div className={style.vLine}></div>
+                <div className={style.vline} />
+                <div className={style.hline} />
                 <div className={style.emplois}>
                     <h1>LES EMPLOIS<span className={style.yellowDot}>.</span></h1>
                     <p>Emplois disponible</p>

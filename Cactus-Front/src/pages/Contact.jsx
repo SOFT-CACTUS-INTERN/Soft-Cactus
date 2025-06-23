@@ -7,17 +7,6 @@ import ArrowUp from '../Components/ArrowUp.jsx'
 const Contact = () => {
  return (
     <>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-      <h1>Contact</h1>
-
       <ContactBox />
       <EmploisCard />
       <Special text={'ils onT parlé de nous'}/>

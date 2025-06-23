@@ -1,7 +1,9 @@
 .Card{
-    width: 55%;
+  max-width: 50%;
+  width: fit-content;
+
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 1em;
+    padding: 2em ;
     border: 1px solid #E3DBD8;
     border-radius: 23px;
     overflow: hidden;
@@ -14,6 +16,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
+    text-align: left;
 }
 .Card .content .service{
     display: flex;
@@ -49,10 +52,28 @@
     text-decoration: none;
     padding-bottom: 10px;
 }
-.vLine{
+.vline{
     height: 114px;
     width: 1px;
     background-color: #E3DBD8;
     margin: auto 1em;
-    
+}
+.hline {
+    display: none;
+    height: 2px;
+    width: 80%;
+    border-top: 1px solid #D6DDED;
+    /* margin: 0 6em; */
+}
+@media (max-width: 1041px) {
+    .Card .content{
+        display: block;
+        text-align: left;
+    }
+    .vline{
+        display: none;
+    }
+    .hline{
+        display: block;
+    }
 }

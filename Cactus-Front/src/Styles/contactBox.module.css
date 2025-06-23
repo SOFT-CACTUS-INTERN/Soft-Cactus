@@ -1,18 +1,18 @@
 .box{
     width: 90%;
-    margin: 0 auto;
+    margin: 5rem auto 0;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(227, 219, 216, 1);
     border-radius: 23.2px;
     position: relative;   
-    
+    overflow: visible;    
 }
 .title{
     width: 100%;
     margin: 0 auto;
     height: auto;
     position: absolute;
-    top: 0px;
+    top: 0;
     transform: translateY(-54%); /*solved the resposive issue*/
     z-index: -1;
 
@@ -41,7 +41,6 @@
     line-height: 42px;
     font-size: 22.74px; /*if you want it responsive (small for small screens and huge for huge screens change to 4 or 3vw*/
     font-size: clamp(1rem, 2vw, 1.5rem) !important;
-
     font-weight: 500;
     padding-top: 2em;
 }
