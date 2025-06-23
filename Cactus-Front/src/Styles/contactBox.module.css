@@ -28,19 +28,21 @@
     white-space: nowrap;
 }
 .bigC{
+    width: 4em;
+    height: auto;
     position: absolute;
     right: 0;
     bottom: 15%;
 }
 .content{
-    padding: 2em 3em;
+    padding: 2em 2.5em 0;
 }
 
 .myform{
     color: #310566;
-    line-height: 42px;
-    font-size: 22.74px; /*if you want it responsive (small for small screens and huge for huge screens change to 4 or 3vw*/
-    font-size: clamp(1rem, 2vw, 1.5rem) !important;
+    line-height: 2em;
+    font-size: 15px; /*if you want it responsive (small for small screens and huge for huge screens change to 4 or 3vw*/
+    
     font-weight: 500;
     padding-top: 2em;
 }
@@ -53,10 +55,10 @@
     background-color: transparent;
     color: #00000066;
     line-height: 42px;
-    font-size: 22.74px;
-    font-size: clamp(1rem, 2vw, 1.5rem) !important;
+    font-size: 15px;
+    
     font-weight: 500;
-    margin: 0 10px;
+    
 }
 .bouton{
     padding:  1.5em 0;
@@ -66,8 +68,8 @@
     cursor: pointer;
     font-family: "Bebas Neue";
     font-weight: 500;
-    font-size: 25px;
-    font-size: clamp(1.3rem, 2vw, 1.5rem) !important;
+    font-size: 15px;
+    font-size: clamp(15px, 2vw, 1.5rem) !important;
     color: #FFFFFF;
     border-radius: 5px;
     padding: 0.5em;
@@ -75,41 +77,50 @@
     background-image: linear-gradient(to right,#9D04D2,#7E01AA);
 }
 .coordonnes{
-    padding: 4em 0;
+    padding: 3.5em 0;
     width: 70%;
 }
 .coordonnes p{
-    font-size: 20px;
-    font-size: clamp(1rem, 2vw, 1.5rem) !important;
+    font-size: 15px;
     font-weight: 500;
     color: #310566;
     padding: 0.7em 0;
 }
 .coordonnes p img{
     padding: 0 5px;
-    width: 24px;
-    height: 24px;
+    width: 1em;
+    height: 1em;
+    max-width: 24px;
+    max-height: 24px;
     vertical-align: middle;
-}
-
- .coordonnes img{
     margin-right: 10px;
 }
+
  .coordonnes .contactItem{
   display: inline-block;
 }
  .coordonnes .contactContainer p {
     white-space: nowrap;
 }
+.localItem{
+    width: 100%;
+    padding-left: 2rem !important;
+    text-indent: -2rem; 
+    display: block;
+}
+
+
+
  .coordonnes P a{
     text-decoration: none;
     color: #310566;
     font-weight: 500;
 }
 
-@media(max-width: 320px) {
+
+@media(max-width: 510px) {
 .myform,.myform form input,.coordonnes p{
-    font-size: 16px;
+    font-size: 12px;
 }
   /* .coordonnes p{
     font-size: 16px;

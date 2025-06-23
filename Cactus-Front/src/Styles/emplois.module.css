@@ -1,5 +1,5 @@
 .Card{
-  max-width: 50%;
+  max-width: 70%;
   width: fit-content;
 
     background-color: rgba(255, 255, 255, 0.5);
@@ -28,9 +28,10 @@
     flex-direction: column;
     gap: .5em;
 }
-.Card .content h1{
-    font-size: 25.52px;
+.Card .content .head{
+    font-size: 20px;
     font-weight: 700;
+    white-space: nowrap;
     color: #5A00C7;
     padding-bottom:5px ;
 }
@@ -40,13 +41,15 @@
     color: #FFC300;
 }
 .Card .content .job{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #310566;
     text-transform: uppercase;
 }
 .Card .content p,.Card .content a{
-    font-size: 18px;
+    font-size: clamp(12px, 2vw,16px);
+    
+    white-space: wrap;
     font-weight: 500;
     color: #310566;
     text-decoration: none;

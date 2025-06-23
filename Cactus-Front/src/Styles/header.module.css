@@ -194,7 +194,6 @@ padding:  15px 30px;
   .navBarMobile {
     display: flex;
     height: 3rem; /*height of navbar preferabably make it a variable to use with ham menu*/
-    border-bottom:1px solid rgb(74, 64, 64) ;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
