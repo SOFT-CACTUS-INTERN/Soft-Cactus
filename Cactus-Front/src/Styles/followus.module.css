@@ -1,0 +1,31 @@
+
+.followus{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;    
+    position: relative;
+    z-index: 10;
+}
+.button{
+      box-sizing: border-box;
+}
+.button a{
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: clamp(12px,2vw,26px);
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0.7em 2.5em;
+    border: none;
+    border-radius: 10px;
+    background-image:linear-gradient(to right,#5A00C7,#8B37CA) ;
+}
+.link{
+    font-size: clamp(12px,2vw,26px);
+    font-weight: 700;
+    color: #310566;
+}

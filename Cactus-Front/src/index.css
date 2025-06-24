@@ -14,10 +14,15 @@
 }
 
 body{
-    background-image: linear-gradient(rgb(243, 229, 255),#ffffff);
-    background-attachment: fixed; /* Prevents repeating when scrolling */
+    background-image: linear-gradient(#efeafd,5% ,#F5F8FF);
+    /* Prevents repeating when scrolling */
     min-height: 100vh;
 }
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
 .bodyLock {
   overflow: hidden;
 }

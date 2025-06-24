@@ -1,6 +1,6 @@
 import React from "react";
 import style from '/src/Styles/special.module.css'
-import { div } from "framer-motion/client";
+
 
 const Special= ({text})=>{
 

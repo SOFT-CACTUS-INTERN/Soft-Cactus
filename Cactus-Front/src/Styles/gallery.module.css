@@ -1,0 +1,122 @@
+.TextContainer{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.TextContainer img{
+    width: 8%;
+    min-width:3em ;
+    max-width: 15em;
+    position: absolute;
+    left: 5%;
+}
+.Text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Text .titre{
+    font-size: clamp(20px,4vw,45px);
+    font-weight: 700;
+    color: #310566;
+}
+.Text .titre span{
+    
+    font-size: clamp(30px,5vw,60px);
+    font-weight: 700;
+    color: #FFC300
+}
+.Text .soustitre{
+    font-size: 18px;
+    font-size: clamp(13px,2vw,18px);
+    font-weight: 400;
+    color: #310566;
+    width: 50%;
+    text-align: center;
+    padding: 5px 0;
+}
+@media (max-width:570px) {
+    .Text .soustitre{
+        width: 75%;
+    }        
+}
+
+.gallery{
+  position: relative;
+  width: 100%;
+}
+.gallery .scrollbuttons{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.scrollbutton{
+    pointer-events: auto; 
+    width: 8%;
+    height: 3em;
+    cursor: pointer; 
+     transition: transform 0.2s ease-out; 
+}
+.scrollbutton:hover {
+  transform: scale(1.1);
+}
+.imageContainer{
+ display: flex; 
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 5px;
+  padding: 20px 0;
+  scrollbar-width: none; /* Firefox */
+    scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.imageContainer::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+.galleryItem{
+     flex: 0 0 25%; 
+    scroll-snap-align: start;
+  box-sizing: border-box;
+}
+.galleryItem img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+.ellipseUp{
+    color: #f4f6ff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-37%);
+    
+    object-fit: cover
+}
+.ellipseDown{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(37%);
+    
+    object-fit: cover
+}
+@media((max-width :750px )){
+    .ellipseUp{
+        transform: translateY(-15%);
+    }
+    .ellipseDown{
+        transform: translateY(15%);
+    }
+}
+
