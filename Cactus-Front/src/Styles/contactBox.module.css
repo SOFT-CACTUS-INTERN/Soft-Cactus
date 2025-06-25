@@ -40,7 +40,7 @@
 .myform{
     color: #310566;
     line-height: 2em;
-    font-size: 15px; /*if you want it responsive (small for small screens and huge for huge screens change to 4 or 3vw*/
+    font-size: clamp(14px,2vw,25px);/*if you want it responsive (small for small screens and huge for huge screens change to 4 or 3vw*/
     
     font-weight: 500;
     padding-top: 2em;
@@ -54,7 +54,7 @@
     background-color: transparent;
     color: #00000066;
     line-height: 42px;
-    font-size: 15px;
+    font-size: clamp(12px,2vw,18px);
     
     font-weight: 500;
     
@@ -67,11 +67,10 @@
     cursor: pointer;
     font-family: "Bebas Neue";
     font-weight: 500;
-    font-size: 15px;
-    font-size: clamp(15px, 2vw, 1.5rem) !important;
+    font-size: clamp(16px, 2vw, 1.8rem) !important;
     color: #FFFFFF;
     border-radius: 5px;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border: hidden;
     background-image: linear-gradient(to right,#9D04D2,#7E01AA);
 }
@@ -80,15 +79,15 @@
     width: 70%;
 }
 .coordonnes p{
-    font-size: 15px;
+    font-size: clamp(14px,2vw,18px);
     font-weight: 500;
     color: #310566;
     padding: 0.7em 0;
 }
 .coordonnes p img{
     padding: 0 5px;
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     max-width: 24px;
     max-height: 24px;
     vertical-align: middle;
@@ -117,16 +116,16 @@
 }
 
 
-@media(max-width: 510px) {
+/* @media(max-width: 510px) {
 .myform,.myform form input,.coordonnes p{
     font-size: 12px;
-}
+} */
   /* .coordonnes p{
     font-size: 16px;
   }
   .myform form input{
     font-size: 16px;
   } */
-}
+/* } */
 
 

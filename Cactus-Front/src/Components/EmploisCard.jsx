@@ -18,9 +18,6 @@ const EmploisCard = ()=>{
                     <p>Emplois disponible</p>
                     <p><a href="https://demo.softcactus.ma/career">Jobs@softcactus.ma</a></p>                </div>
 
-
-
-
             </div>
 
         </div>

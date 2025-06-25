@@ -1,5 +1,5 @@
 .contactGallery{
-  margin: 5em 0;
+  margin: 3em 0 2em;
 }
 .TextContainer{
     width: 100%;
@@ -22,7 +22,8 @@
     
 }
 .Text .titre{
-    font-size: clamp(20px,4vw,45px);
+    white-space: nowrap;
+    font-size: clamp(1.6rem,4vw,45px);
     font-weight: 700;
     color: #310566;
 }

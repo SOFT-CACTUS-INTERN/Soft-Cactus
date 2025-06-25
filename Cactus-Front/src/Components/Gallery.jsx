@@ -9,6 +9,7 @@ import image4 from '/src/assets/gallery/image4.svg'
 import right from '/src/assets/icons/scroll/toRight.svg'
 import left from '/src/assets/icons/scroll/toLeft.svg'
 import ellipse from '/src/assets/decor/ellipse.svg'
+import Huradio from '/src/assets/hovered/uradioHover.svg'
 
 import { useRef } from "react";
 
@@ -50,7 +51,7 @@ const Gallery= ({text})=>{
             <img src={ellipse} alt="" className={style.ellipseUp} />
             <div className={style.imageContainer} ref={imageContainer}>
                 {images.map((img,idx)=>(
-                    <div className={style.galleryItem}><img src={img} key={Math.random()} className={style.galleryimg} /></ div>
+                    <div className={style.galleryItem}><img src={img} key={Math.random()} className={style.galleryimg} loading="lazy"  /></ div>
                 ))}
             </div>
             <img src={ellipse} alt="" className={style.ellipseDown} />

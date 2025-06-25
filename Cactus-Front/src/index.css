@@ -12,7 +12,9 @@
   padding: 0;
   margin: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: linear-gradient(#efeafd,5% ,#F5F8FF);
     /* Prevents repeating when scrolling */

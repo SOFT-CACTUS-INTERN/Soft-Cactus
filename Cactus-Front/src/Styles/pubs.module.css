@@ -18,7 +18,27 @@
     width: 100vw;
     height: auto;
 }
+.uradio {
+  position: relative;
+  overflow: hidden;
+}
 
+.uradio img:first-of-type{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease;
+}
+.uradio img:nth-of-type(2){
+  opacity: 0;
+}
+.uradio:hover img:first-of-type{
+  opacity: 0;
+}
+.uradio:hover img:nth-of-type(2){
+  opacity: 1;
+}
 .cardsContainer {
   display: flex;
   gap: 1vw;

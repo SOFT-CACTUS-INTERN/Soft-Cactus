@@ -118,6 +118,7 @@
 }
 
 .A2{
+    font-size: clamp(12px,2vw,16px);
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
