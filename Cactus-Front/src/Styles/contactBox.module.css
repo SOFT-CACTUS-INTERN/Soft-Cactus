@@ -15,7 +15,6 @@
     top: 0;
     transform: translateY(-54%); /*solved the resposive issue*/
     z-index: -1;
-
     background-image: linear-gradient(to bottom,#5A00C7, #AA74EB);
     color: transparent;
     background-clip: text;

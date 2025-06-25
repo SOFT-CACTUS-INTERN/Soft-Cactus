@@ -36,7 +36,7 @@ const ArrowUp =()=>{
                     
 
         >
-        <img src={arrow} className={style.arrow} alt="go up" />
+        <img src={arrow} className={style.innerArrow} alt="go up" />
         </motion.div>
     )
 };
