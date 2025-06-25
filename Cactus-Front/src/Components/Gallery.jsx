@@ -32,7 +32,7 @@ const Gallery= ({text})=>{
             }
     }
     return(
-        <>
+        <div className={style.contactGallery}>
         <div className={style.TextContainer}>
             <img src={ball} alt="O" />
             <div className={style.Text}>
@@ -56,8 +56,8 @@ const Gallery= ({text})=>{
             <img src={ellipse} alt="" className={style.ellipseDown} />
 
         </div>
-        <FollowUs />
-        </>
+        <FollowUs alink={'https://www.instagram.com/soft.cactus.communication/'} />
+        </div>
     )
 };
 export default Gallery;

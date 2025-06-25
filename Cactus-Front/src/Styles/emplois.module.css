@@ -7,7 +7,7 @@
     border: 1px solid #E3DBD8;
     border-radius: 23px;
     overflow: hidden;
-    margin: 1em 0 0 5%; /*just to separate it 5% from left and 1em from 
+    margin: 1em 0 1em 5%; /*just to separate it 5% from left and 1em from 
                         the component above and down
                         if it ruins the page think of another solutions!!*/
 }
