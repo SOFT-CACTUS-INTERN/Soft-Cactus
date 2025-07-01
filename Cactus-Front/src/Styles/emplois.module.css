@@ -68,10 +68,20 @@
     border-top: 1px solid #D6DDED;
     /* margin: 0 6em; */
 }
-@media (max-width: 690px) {
-    /* .Card{
-        width: 100%;
-    } */
+@media (max-width: 680px) {
+    .Card{
+        max-width: 90%;
+        width: 80%;
+        margin:  1em auto;
+    }
+}
+    @media (max-width: 590px){
+    .Card{
+        max-width: 70%;
+        width: fit-content;
+        margin: 1em 0 1em 5%; 
+    }
+    
     .Card .content{
         display: block;
         text-align: left;

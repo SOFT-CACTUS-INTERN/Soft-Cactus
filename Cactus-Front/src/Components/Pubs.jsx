@@ -5,8 +5,7 @@ import uradio from '../assets/uradio.svg';
 import wavyline from '../assets/decor/wavyline.svg';
 import waves from '../assets/decor/waves.svg';
 
-import Huradio from '/src/assets/hovered/uradioHover.svg'
-import Hforsa from '/src/assets/hovered/forsaHover.svg'
+
 
 const Pubs = () => {
   
@@ -15,17 +14,22 @@ const Pubs = () => {
         <div className={styles.waves}>
             <img src={waves} alt="" />
         </div>
-        <div 
-  
-        className={styles.cardsContainer}>
-          <div className={styles.uradio}>
-              <img src={forsa} alt="Forsa" />
-              <img src={Hforsa} alt="Forsa" />
-            </div>
-            <div className={styles.uradio}>
-              <img src={uradio} alt="Uradio" />
-              <img src={Huradio} alt="Huradio" />
-            </div>
+
+
+        <div className={styles.cardsContainer}>
+          <div className={styles.cardOne}>            
+              <div className={styles.box}>
+                  <img className={styles.image} src={forsa} alt="Forsa" />
+               </div>
+               <div className={styles.cardBackLeft}></div>
+          </div>
+          <div className={styles.cardTwo}>
+              <div className={styles.box}>
+                <img className={styles.image} src={uradio} alt="Uradio" />
+              </div>
+              <div className={styles.cardBackRight}></div>
+           </div>
+            
         </div>
     </div>
   );

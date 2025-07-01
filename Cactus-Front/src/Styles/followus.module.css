@@ -23,9 +23,49 @@
     border: none;
     border-radius: 10px;
     background-image:linear-gradient(to right,#5A00C7,#8B37CA) ;
+          transition: background-color 0.5s ease;
 }
 .link{
     font-size: clamp(12px,2vw,26px);
     font-weight: 700;
-    color: #310566;
+    color: #5A00C7;
+}
+
+
+/* From Uiverse.io by Allyhere */ 
+.button a {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: #8B37CA;
+  --btn-bg-2: #5A00C7;
+  --btn-bg-color: #FFFFFF;
+  --radii: 10px;
+  cursor: pointer;
+  padding: 0.7em 2.5em;
+  
+  font-size: clamp(12px,2vw,26px);
+  font-weight: 700;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  
+}
+
+.button a:hover {
+  background-position: right top;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .button a {
+    transition: linear;
+  }
 }

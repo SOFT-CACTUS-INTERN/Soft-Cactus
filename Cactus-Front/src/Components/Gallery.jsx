@@ -9,15 +9,38 @@ import image4 from '/src/assets/gallery/image4.svg'
 import right from '/src/assets/icons/scroll/toRight.svg'
 import left from '/src/assets/icons/scroll/toLeft.svg'
 import ellipse from '/src/assets/decor/ellipse.svg'
-import Huradio from '/src/assets/hovered/uradioHover.svg'
-
-import { useRef } from "react";
+import Draggable from "react-draggable";
+import { useState ,useRef } from "react";
 
 
  
 const Gallery= ({text})=>{
-    const images =[image1,image2,image3,image1,image2,image3,image1,image2,image3];
+const images =[image1,image2,image3,image1,image2,image3,image1,image2,image3];
     const imageContainer = useRef(null);
+
+
+  
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+  
+    setIsDragging(true);
+    setStartX(e.pageX - imageContainer.current.offsetLeft);
+    setScrollLeft(imageContainer.current.scrollLeft);
+  
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - imageContainer.current.offsetLeft;
+    const walk = (x - startX) * 1.5; // Adjust multiplier for speed
+    imageContainer.current.scrollLeft = scrollLeft - walk;
+  };
+    
+    
     const scroll=(direction)=>{
         const currentScroll = imageContainer.current.scrollLeft;
         if(direction === 'left')
@@ -49,9 +72,19 @@ const Gallery= ({text})=>{
                 <img src={right} alt="->" className={style.scrollbutton} onClick={()=>scroll('right')}/>
             </div>
             <img src={ellipse} alt="" className={style.ellipseUp} />
-            <div className={style.imageContainer} ref={imageContainer}>
+            <div className={style.imageContainer} ref={imageContainer}
+        style={{
+            display: 'flex',
+            overflowX: 'auto',
+            userSelect: 'none',
+        }}
+        onMouseDown={handleMouseDown}
+        onMouseLeave={() => setIsDragging(false)}
+        onMouseUp={() => setIsDragging(false)}
+        onMouseMove={handleMouseMove}            
+            >
                 {images.map((img,idx)=>(
-                    <div className={style.galleryItem}><img src={img} key={Math.random()} className={style.galleryimg} loading="lazy"  /></ div>
+                    <div className={style.galleryItem}><img src={img} key={idx} className={style.galleryimg} loading="lazy"  draggable="false"/></ div>
                 ))}
             </div>
             <img src={ellipse} alt="" className={style.ellipseDown} />
@@ -59,6 +92,6 @@ const Gallery= ({text})=>{
         </div>
         <FollowUs alink={'https://www.instagram.com/soft.cactus.communication/'} />
         </div>
-    )
+    );
 };
 export default Gallery;

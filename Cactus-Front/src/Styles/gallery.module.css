@@ -53,6 +53,7 @@
   width: 100%;
 }
 .gallery .scrollbuttons{
+    pointer-events: none; 
     position: absolute;
     left: 0;
     right: 0;
@@ -62,11 +63,14 @@
   padding: 0 16px;
 }
 .scrollbutton{
-    pointer-events: auto; 
+    pointer-events: auto;
     width: 8%;
     height: 3em;
     cursor: pointer; 
      transition: transform 0.2s ease-out; 
+}
+.scrollbuttons::after{
+    pointer-events: auto;
 }
 .scrollbutton:hover {
   transform: scale(1.1);

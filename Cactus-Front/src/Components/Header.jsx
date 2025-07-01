@@ -37,8 +37,8 @@ function Header() {
             </ul>
       </div>
       <div className={head.button}>
-        <Link to="/">{/* to which route it takes? a new page ?   */}
-          <motion.button >nos marks</motion.button>
+        <Link to="/contact">{/* to which route it takes? a new page ?   */}
+          <motion.button >demande devis</motion.button>
         </Link>
       </div>
       </div>
