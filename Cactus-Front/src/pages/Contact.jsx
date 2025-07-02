@@ -7,14 +7,29 @@ import ArrowUp from '../Components/ArrowUp.jsx'
 import Gallery from '../Components/Gallery.jsx'
 import { motion, useInView } from "framer-motion";
 import { useRef } from 'react'
-
+import { ToastContainer, Slide} from 'react-toastify';
 import FadeIn from '/src/Components/FadeIn.jsx'
+
 
 const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
 
  return (
+  <>
+    <ToastContainer
+      position="top-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick={false}
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="colored"
+      transition={Slide}
+    />
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
@@ -45,6 +60,7 @@ const Contact = () => {
 
 
     </motion.div>
+    </>
  )
 }
 
