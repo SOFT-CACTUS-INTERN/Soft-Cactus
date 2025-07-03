@@ -1,6 +1,6 @@
 import React from 'react'
 import home from '/src/Styles/accueil.module.css'
-import Bar from '../Components/AnimeBar.jsx'
+import Bar from '../Components/AnimeBars.jsx'
 
 const Accueil = () => {
   

@@ -1,28 +1,79 @@
-.rectangle{
-    width: 100%;
-    height: 70px; /*88 on figma but seemes so big idk*/
-    background-image: linear-gradient(to right,#351555,rgba(117, 47, 187, 1),#351555);
-    display: flex;
-    align-items: center;
-     overflow: hidden;
-     position:relative
-}
-.scroller{
-    overflow: hidden;
-    z-index: 100;
-    mask: linear-gradient(90deg,transparent, white 20%,white 70%,transparent);
-    -webkit-mask: linear-gradient(90deg,transparent, white 20%,white 70%,transparent);
-    position: relative;
-}
-.imgContainer{
+/*don't touch BE CAREFUL LOL*/
+.animeBars{
     width: 100vw;
+    height: auto;
+    margin: 7em 0;
+    position: relative;
+    overflow-x: clip;
     display: flex;
-    gap:50px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px greenyellow solid;
+    
 }
-.imgContainer img{
-    border: 1px red solid;
-  opacity: 0.7;
+@keyframes slider {
+    0% {
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(calc(-100% / 2))
+    }
+}
+.slogan{
+    position: absolute;
+    width: 100%;
+    
+    height: 7vh; /*not sure yet*/
+    background-image: linear-gradient(to right,#4B0F6E,#9144EE);
+    opacity: 60%;
+    transform: skewY(3.5deg); /*skewY insteas of 'rotate' helps rotating without shrinking the actual width NO MATTER WHAT*/
+    
+}
+.sloganScroller{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    gap: 50px;
+    height: 100%;
+    align-items: center;
+    will-change: transform;
+    animation: 20s slider infinite linear;
+     
+}
+.sloganScroller span{
+    font-size: clamp(18px,2vw,35px);
+    font-family: Bebas Neue;
+    color: #FFFFFF;
+    line-height: 100%;
+    gap: 50px;
+    white-space: nowrap;
+}
+
+.conseiller{
+    width: 100%;
+    background-image: linear-gradient(178deg ,#9144EE,#4B0F6E); /*maybe to right check figma*/
+    height: 100%; /*not sure yet*/
+    transform: skewY(-3deg);
+    
+    opacity:90%;
+}
+.conseiller .conseillerScroller{
+    width: fit-content;
+    height: 100%;
+    will-change: transform;
+    animation: 50s slider infinite linear;
+     will-change: transform; 
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5em; /*random value from me need to make sure*/
+}
+.conseillerScroller span{
+    font-family: Bebas Neue;
+    font-size: clamp(20px,3vw,45px); /*maybe need to look after the font sizes responsivity*/
+    font-weight: 700;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: nowrap;
 }

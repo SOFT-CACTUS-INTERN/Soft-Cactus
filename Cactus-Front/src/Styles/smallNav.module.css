@@ -1,0 +1,30 @@
+
+.navList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.navList li:first-of-type{
+    list-style: none;
+}
+.navList li{
+    font-size: clamp(12px,2vw,20px);
+    padding:0  1.5em 0 10px;
+    white-space: nowrap;
+}
+.navList li::marker { /*changer couleur de la pouce*/
+    color:#9144EE;
+    
+}
+.navList li a{
+    
+    font-weight: 400;
+    text-decoration: none;
+    color: #310566;
+    text-transform: uppercase;
+
+}

@@ -1,0 +1,37 @@
+.secteur{
+    width: 100%;
+    padding: 0.75em 0; /*space between each sector vertically*/
+}
+.title{
+    
+}
+.title img{
+    padding-right: 10px;
+}
+
+/*maybe I need to add uppercase to it*/
+.title h1{
+    display: inline;
+    font-size: clamp(18px,3vw,39px);
+    font-family: Bebas Neue;
+    font-weight: 700;
+    color: #5A00C7;
+    text-transform: uppercase;
+}
+.title img{
+    width: 4.5vw;
+    height: auto;
+    vertical-align: middle;
+}
+.para{
+    font-size: clamp(12px,2vw,20px); /*maybe 13*/
+    font-weight: 400;
+    color: #310566;
+    /* text-align: justify; */
+    transform: translateX(8%);
+    width: 70%;
+    /* padding-left: 15px;  */
+    
+    /*I need to set an indent so it don't be under the image
+                                            look for your css properties of school*/
+}

@@ -1,0 +1,14 @@
+.QSN{
+padding: 0 5%;
+}
+.definition{
+    font-size: clamp(12px,2vw,20px);
+    font-weight: 400;
+    color: #310566;
+    border-left: 8px solid #8157FB;
+    border-radius: 5px;
+    padding-left: 15px;
+    width: 90%;
+    text-align: justify;
+    margin: 0 0 3em; /*space between paragraph of SC and sectors*/
+}

@@ -1,0 +1,42 @@
+.gradientText{
+    width: 100%;
+    padding-bottom: 1em; /*until we make sure how much is needed*/
+}
+.gradientText > p{
+    font-size: clamp(50px,15vw,250px); /*changeable after making sure*/
+    font-family: Bebas Neue;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+
+
+    /*doesn't look that good but will make sure how it looks in figma and fix it later*/
+    background: linear-gradient(
+    to right,
+    rgba(148, 65, 255, 1), 
+    rgba(238, 28, 192, 0.51),
+    rgba(255, 0, 15, 0.25),
+
+    rgba(148, 65, 255, 1) 
+  );
+  
+  /* Clip the background to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  /* Animation */
+  background-size: 200% auto;
+  animation: gradient-animation 5s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+
