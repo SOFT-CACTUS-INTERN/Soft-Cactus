@@ -6,16 +6,19 @@ import vectorTwo from '/src/assets/decor/vectorTwo.svg'
 import cercleTwo from '/src/assets/decor/cercles/cercleTwo.svg'
 import cercleOne from '/src/assets/decor/cercles/cercleOne.svg'
 import cercleThree from '/src/assets/decor/cercles/cercleThree.svg'
+import FadeIn from '/src/Components/FadeIn.jsx'
 
-const NosValeurs= ({Title="titre par defaut", para="Lorem ipsum dolor sit amet consectetur. Nibh luctus nisi ac eu Ultricies nisl enim lacus id aliquam montes. Lorem ipsum dolor sit amet consectetur." })=>{
+const NosValeurs= ()=>{
 
     return(
-        <><SpecialText text={'NOS VALEURS'}   />
+        <FadeIn delay={0.2}>
+        <SpecialText text={'NOS VALEURS'}   />
         <div className={styles.NosValeurs}>
         <img src={cercleOne} alt="" className={styles.cercleOne} />
         <img src={cercleTwo} alt=""  className={styles.cercleTwo}/>
         <img src={cercleThree} alt="" className={styles.cercleThree}/>
             {/* number 1 */}
+            <FadeIn delay={0.3}>
             <div className={styles.valeur}>
                 <div className={styles.One}>
                     <svg className={styles.SVGelement} width="204" height="211" viewBox="0 0 204 211" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,8 +42,9 @@ const NosValeurs= ({Title="titre par defaut", para="Lorem ipsum dolor sit amet c
                     </div>
                 </div>
             </div>
-
+</FadeIn>
             {/* number 2 */}
+            <FadeIn delay={0.2}>
             <div className={styles.valeur}>
                 
                 <div>
@@ -64,8 +68,9 @@ const NosValeurs= ({Title="titre par defaut", para="Lorem ipsum dolor sit amet c
 
                 </div>    
             </div>
-            
+            </FadeIn>
             {/* number 3 */}
+            <FadeIn delay={0.2}>
             <div className={styles.valeur}>
                 <div className={styles.One}>
                     
@@ -88,8 +93,10 @@ const NosValeurs= ({Title="titre par defaut", para="Lorem ipsum dolor sit amet c
                     </div>
                 </div>
             </div>
+            </FadeIn>
 
             {/* number 4 */}
+            <FadeIn delay={0.2}>
             <div className={styles.valeur}>
                 
                 <div>
@@ -113,13 +120,14 @@ const NosValeurs= ({Title="titre par defaut", para="Lorem ipsum dolor sit amet c
 
                 </div>
             </div>
+            </FadeIn>
 
 </div>
 
 
 
 
-</>
+</FadeIn>
     )
 };
 export default NosValeurs;
