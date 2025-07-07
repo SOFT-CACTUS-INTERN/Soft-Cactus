@@ -3,7 +3,7 @@
     padding: 0.75em 0; /*space between each sector vertically*/
 }
 .title{
-    
+    white-space: nowrap;
 }
 .title img{
     padding-right: 10px;
@@ -12,14 +12,15 @@
 /*maybe I need to add uppercase to it*/
 .title h1{
     display: inline;
-    font-size: clamp(18px,3vw,39px);
+    font-size: clamp(22px,3vw,39px);
     font-family: Bebas Neue;
-    font-weight: 700;
+    font-weight: 600;
     color: #5A00C7;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 .title img{
-    width: 4.5vw;
+    width: clamp(1.5em,4vw,3em);
     height: auto;
     vertical-align: middle;
 }
@@ -34,4 +35,9 @@
     
     /*I need to set an indent so it don't be under the image
                                             look for your css properties of school*/
+}
+@media(max-width:786px){
+ .para{
+    width: calc(100% - 5%); /*5% is a padding applied to that whole section of that page*/
+}   
 }

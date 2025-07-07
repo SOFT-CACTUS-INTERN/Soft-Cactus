@@ -1,14 +1,29 @@
 .QSN{
 padding: 0 5%;
 }
+.container{
+    height: 100%;
+}
 .definition{
     font-size: clamp(12px,2vw,20px);
     font-weight: 400;
     color: #310566;
-    border-left: 8px solid #8157FB;
-    border-radius: 5px;
+    
+   position: relative; 
     padding-left: 15px;
     width: 90%;
     text-align: justify;
     margin: 0 0 3em; /*space between paragraph of SC and sectors*/
 }
+.definition::before{
+    content: '';
+    position: absolute;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   width: 5px;
+   background: #8157FB;
+   border-radius: 50px;
+}
+
+

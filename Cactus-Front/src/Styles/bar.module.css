@@ -2,7 +2,7 @@
 .animeBars{
     width: 100vw;
     height: auto;
-    margin: 10vh 0;
+    margin: clamp(3em,10vw,15em) 0;
     position: relative;
     overflow-x: clip;
     display: flex;
@@ -42,18 +42,18 @@
      
 }
 .sloganScroller span{
-    font-size: clamp(18px,2vw,35px);
+    font-size: clamp(18px,2vw,40px);
     font-family: Bebas Neue;
     color: #FFFFFF;
     line-height: 100%;
-    gap: 50px;
+    
     white-space: nowrap;
 }
 
 .conseiller{
     width: 100%;
     background-image: linear-gradient(178deg ,#9144EE,#4B0F6E); /*maybe to right check figma*/
-    height: 100%; /*not sure yet*/
+    height: clamp(1.5em,4vw,4em); /*not sure yet*/
     transform: skewY(-3deg);
     
     opacity:90%;
@@ -71,7 +71,7 @@
 }
 .conseillerScroller span{
     font-family: Bebas Neue;
-    font-size: clamp(20px,3vw,45px); /*maybe need to look after the font sizes responsivity*/
+    font-size: clamp(18px,3vw,30px); /*maybe need to look after the font sizes responsivity*/
     font-weight: 700;
     letter-spacing: 5%;
     text-transform: uppercase;
@@ -80,7 +80,7 @@
 }
 @media (max-width : 500px){
     .slogan{
-    transform: skewY(8deg);
-    height: 4vh;
+    transform: skewY(5deg);
+    height: 3vh;
 }
 }

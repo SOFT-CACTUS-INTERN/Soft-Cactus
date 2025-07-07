@@ -12,7 +12,7 @@
 
 .A1{
     max-width: 80%;
-    height: 200px; /*on figma 300px but looked big*/
+    height: auto; /*on figma 300px but looked big*/
     background-image: linear-gradient(#FFFFFF,#F6F9FF);
     border: 1px solid #D6DDED;
     border-radius: 28px;
@@ -73,7 +73,7 @@
 .links ul{
     display: flex;
     flex-direction: row;
-    column-gap: 3em;
+    column-gap: 2em;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -132,7 +132,8 @@
 @media (max-width: 1000px) {
     .footer{
         width: auto;
-        padding: 2em 1em;
+        padding: 1em 1em;
+        gap: 10px;
     }
     .A1{
         height: auto;
@@ -141,6 +142,7 @@
         flex-wrap: wrap;
         width: auto;
         padding: 2em;
+        gap: 1em;
     }
     .vline{
         display: none;
@@ -160,6 +162,7 @@
     }
       .A1 .B2{
         align-items: center;
+        gap: 1em;
     }
     .A1 .B2 p{
         text-align: center;
@@ -167,4 +170,39 @@
     .contactContainer{
         text-align: center;
     }
+}
+
+@media(min-width:1500px){
+.A1 .B1 p, .A1 .B1 .slogan{
+    font-size: clamp(15px,1vw,32px);
+}
+.A1 .B1 p{
+    max-width: 750px ;
+}
+.A1 .B1 .slogan{
+    font-size: clamp(15px,1vw,32px);
+}
+
+.links ul li a{
+    font-family: "Bebas Neue" ;
+    color: rgba(58, 2, 78, 0.7);
+    text-decoration: none;
+    font-size: clamp(18px,1vw,45px);
+}
+
+.B2 .coordonnes P a,.B2 .coordonnes P{
+    font-size: clamp(12px,1vw,27px)
+}
+.B2 .SMlinks a img{
+    width: 4%;
+}
+.A1{
+    gap: clamp(3em,5vw,15em);
+}
+.A1 .B1 img{
+    max-width: 250px;
+}
+.A2{
+    font-size: clamp(12px,2vw,22px) ;
+}
 }

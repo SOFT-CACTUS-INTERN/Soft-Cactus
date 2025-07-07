@@ -18,6 +18,7 @@ const NosValeurs= ()=>{
         <img src={cercleTwo} alt=""  className={styles.cercleTwo}/>
         <img src={cercleThree} alt="" className={styles.cercleThree}/>
             {/* number 1 */}
+            
             <FadeIn delay={0.3}>
             <div className={styles.valeur}>
                 <div className={styles.One}>

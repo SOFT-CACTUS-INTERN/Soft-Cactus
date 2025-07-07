@@ -28,3 +28,6 @@
     text-transform: uppercase;
 
 }
+.navList li a:hover{
+    color: #9144EE;
+}
