@@ -2,7 +2,7 @@
 .animeBars{
     width: 100vw;
     height: auto;
-    margin: 7em 0;
+    margin: 10vh 0;
     position: relative;
     overflow-x: clip;
     display: flex;
@@ -23,7 +23,8 @@
     position: absolute;
     width: 100%;
     
-    height: 7vh; /*not sure yet*/
+    height: 5vh; /*not sure yet*/
+
     background-image: linear-gradient(to right,#4B0F6E,#9144EE);
     opacity: 60%;
     transform: skewY(3.5deg); /*skewY insteas of 'rotate' helps rotating without shrinking the actual width NO MATTER WHAT*/
@@ -76,4 +77,10 @@
     text-transform: uppercase;
     color: #FFFFFF;
     white-space: nowrap;
+}
+@media (max-width : 500px){
+    .slogan{
+    transform: skewY(8deg);
+    height: 4vh;
+}
 }

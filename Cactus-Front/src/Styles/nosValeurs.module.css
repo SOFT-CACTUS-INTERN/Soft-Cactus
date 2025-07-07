@@ -1,0 +1,242 @@
+/* <path d="M62.6231 210.838C28.2594 210.838 9.54102 191.282 9.54102 158.035V62.4878C9.54102 28.9622 28.2594 9.68506 62.6231 9.68506C96.7074 9.68506 115.426 28.9622 115.426 62.4878V158.035C115.426 191.282 96.7074 210.838 62.6231 210.838ZM62.6231 179.827C74.0776 179.827 80.5034 173.122 80.5034 159.712V60.8115C80.5034 47.1219 74.0776 40.6962 62.6231 40.6962C51.1685 40.6962 44.4634 47.1219 44.4634 60.8115V159.712C44.4634 173.122 51.1685 179.827 62.6231 179.827ZM168.257 208.044V61.0909H131.658V36.5055C161.272 36.5055 171.609 31.756 179.432 12.4788H203.179V208.044H168.257Z" fill="#5006AA" fill-opacity="0.3"/> */
+@keyframes numberSmooth{
+    0%{}
+    100%{
+        opacity: 1;
+        fill: #ff0000;
+    }
+}
+
+.SVGelement .SVGfill{
+    fill-opacity:0.3;
+    fill: #5006AA;
+    transition: 
+        fill 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), /*to smooth out the transition*/
+        fill-opacity 0.6s cubic-bezier(0.25, 0.5,0.7, 1);
+}
+.SVGelement:hover .SVGfill{
+    fill-opacity:1;
+    fill: #FFC300;
+}
+
+.NosValeurs{
+    margin: 0  0 1.5em 0;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.NosValeurs .cercleOne{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15vw;
+    min-width: 7em;
+    max-width: 15em; /*modifiable until i see the big screen's respponsivity*/
+
+}
+.NosValeurs .cercleTwo{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 15vw;
+    min-width: 7em;
+    max-width: 15em; /*modifiable until i see the big screen's respponsivity*/
+}
+.NosValeurs .cercleThree{
+    position: absolute;
+    right: 0;
+    width: 15vw;
+    min-width: 7em;
+    max-width: 15em; /*modifiable until i see the big screen's respponsivity*/
+    bottom: 0;
+}
+.One svg{
+    width: 10vw;
+    min-width: 5em;
+    height: auto;
+    min-height: 5em;
+    vertical-align: middle;
+    margin-top: 3vh;
+}
+.valeur{
+    display: flex;
+    gap: 2.5em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.Title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Title .titleCercle{
+    width: 1.5vw; /*need responsive dimensions*/
+    height: 1.5vw;
+    border: 4px solid #8e44ad;
+    border-radius: 50%;
+    background: transparent;
+    flex-shrink: 0; /*IDK about this one*/
+}
+.Title h1{
+    
+    font-size: 78px; /*not responsive */
+    font-size: clamp(20px,5vw,78px);
+    font-weight: 700;
+    font-family: Bebas Neue;
+    color: #3A024E;
+    display: inline;
+
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    text-shadow: 0 2px 4px rgba(76, 29, 149, 0.3);
+    position: relative;
+    /* -webkit-text-stroke: 0px transparent;
+  transition: all 0.3s ease; */
+}
+/*---------------------------------------title animation on hover-----------------------*/
+.Title h1::before{
+     content: attr(data-text);
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            color: #fbbf24;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(10px);
+            z-index: -1;
+}
+       .Title h1::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: transparent;
+            -webkit-text-stroke: 2px #7c3aed;
+            
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            z-index: 1;
+        }
+       .Title h1:hover {
+            /* Main text becomes transparent */
+            color: transparent;
+            text-shadow: none;
+            transform: translateY(-2px);
+        }
+
+        .Title h1:hover::before {
+            /* Yellow fill appears */
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .Title h1:hover::after {
+            /* Purple stroke appears */
+            opacity: 1;
+        }
+/*---------------------------------------title animation DONE-----------------------*/
+.paragraphe p{
+    
+    font-size: clamp(12px, 1.5vw,30px);
+    font-weight: 300 !important;
+    /*font-family ?*/
+    color: #3A024E;
+    max-width: 36vw; /*not responsive*/
+    min-width: 15em;
+    text-transform: uppercase;
+    line-height: 100%;
+    letter-spacing: 1%;
+    /*maybe a border-radius ?*/    
+    padding-left: 1rem;           /* Space between border and text */
+    border-left: 4px solid #FFB800;  /* Orange left border - 4px thick */
+    font-weight: 500;  
+}
+.paragraphe2 p{
+    margin-top: 0.5em;
+    font-size: clamp(12px, 1.5vw,30px);
+    font-weight: 300 !important;
+    /*font-family ?*/
+    color: #3A024E;
+    max-width: 30vw; /*not responsive*/
+    min-width: 15em;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 100%;
+    letter-spacing: 1%;
+    /*maybe a border-radius ?*/    
+    padding-right: 1rem;           /* Space between border and text */
+    border-right: 4px solid #FFB800;  /* Orange left border - 4px thick */
+    font-weight: 500;  
+}
+.vectorOne{
+    width: 30vw;
+    min-width: 15.5em;
+    height: auto;
+    position: absolute;
+    transform: translate(20%,50%);
+}
+.vectorTwo{
+    width: 30vw;
+    min-width: 15.5em;
+    height: auto;
+    position: absolute;
+    transform: translate(0%,45%);
+}
+
+
+@media (max-width:515px){
+ /* .paragraphe p{
+    max-width: 50vw;
+ } */
+.vectorOne{
+    transform: translate(0%,50%);
+}
+.vectorTwo{
+    transform: translate(10%,45%);
+}
+.Title {
+    gap: 10px;
+}
+}
+
+@media (max-width:450px){
+ .NosValeurs{
+    justify-content: flex-start;
+ }
+ .valeur{
+    padding: 0 10px;
+ }
+ .vectorOne{
+    transform: translate(-10%,50%);
+}
+.vectorTwo{
+    transform: translate(18%,45%);
+}
+.Title {
+    gap: 5px;
+}
+.valeur{
+    gap: 1em;
+}
+.One svg{
+    width: 17vw;
+    min-width: 4em;
+    height: auto;
+    min-height: 5em;
+}
+}
+@media (max-width:1605px) and (min-width:700px){
+  .vectorOne{
+    transform: translate(30%,50%);
+}   
+.vectorTwo{
+    transform: translate(-10%,45%);
+}
+}
+
