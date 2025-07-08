@@ -5,7 +5,7 @@
 .title{
     white-space: nowrap;
 }
-.title img{
+.arrow{
     padding-right: 10px;
 }
 
@@ -18,8 +18,9 @@
     color: #5A00C7;
     text-transform: uppercase;
     white-space: nowrap;
+    position: relative;
 }
-.title img{
+.arrow{
     width: clamp(1.5em,4vw,3em);
     height: auto;
     vertical-align: middle;
@@ -29,15 +30,22 @@
     font-weight: 400;
     color: #310566;
     /* text-align: justify; */
-    transform: translateX(8%);
+     /*the padding is the width of the arrow next to the title*/
     width: 70%;
     /* padding-left: 15px;  */
     
     /*I need to set an indent so it don't be under the image
-                                            look for your css properties of school*/
+    
+    look for your css properties of school*/
+    padding-left: 2.9em;
+    
+    
+}
+.inline{
+display: inline;
 }
 @media(max-width:786px){
  .para{
-    width: calc(100% - 5%); /*5% is a padding applied to that whole section of that page*/
+    width: calc(100% - 3em); /*5% is a padding applied to that whole section of that page*/
 }   
 }

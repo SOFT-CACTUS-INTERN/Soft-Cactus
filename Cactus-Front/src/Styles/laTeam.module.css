@@ -1,0 +1,136 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.galleryContainer {
+  display: flex;
+  height: 600px;
+  width: 100vw;
+  gap: 8px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+.galleryItem {
+  position: relative;
+  flex: 1;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.galleryItem.expanded {
+  flex: 2;
+}
+
+.galleryItem.collapsed {
+  flex: 1;
+  filter: brightness(0.9) blur(0.7px);
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*--------------------------------contenue dans les images-------------------------------*/
+.galleryOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.galleryItem.expanded .galleryOverlay {
+  opacity: 1;
+}
+
+.galleryContent {
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.galleryItem.expanded .galleryContent {
+  transform: translateY(0);
+}
+
+.galleryTitle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.galleryDescription {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/*--------------------------------FIN contenue dans les images-------------------------------*/
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .galleryContainer {
+    height: 400px;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .galleryItem.expanded {
+    flex: 2;
+  }
+
+  .galleryItem.collapsed {
+    flex: 0.8;
+  }
+
+  .galleryOverlay {
+    padding: 16px;
+  }
+
+  .galleryTitle {
+    font-size: 1.2rem;
+  }
+
+  .galleryDescription {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .galleryContainer {
+    height: 300px;
+    gap: 4px;
+  }
+
+  .galleryOverlay {
+    padding: 12px;
+  }
+
+  .galleryTitle {
+    font-size: 1rem;
+  }
+
+  .galleryDescription {
+    font-size: 0.7rem;
+  }
+}

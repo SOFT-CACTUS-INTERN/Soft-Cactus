@@ -123,10 +123,7 @@ const NosValeurs= ()=>{
             </div>
             </FadeIn>
 
-</div>
-
-
-
+    </div>
 
 </FadeIn>
     )

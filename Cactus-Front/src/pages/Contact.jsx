@@ -30,12 +30,7 @@ const Contact = () => {
       theme="colored"
       transition={Slide}
     />
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 100 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}} 
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+     <FadeIn>
 
        
         <FadeIn delay={0.2}><ContactBox /></FadeIn>
@@ -54,12 +49,12 @@ const Contact = () => {
        <FadeIn delay={0.2}><Pubs /></FadeIn>
        
         
-       <FadeIn delay={0.2}><Gallery /></FadeIn>
+       <Gallery />
        
         <ArrowUp />
 
 
-    </motion.div>
+    </FadeIn>
     </>
  )
 }

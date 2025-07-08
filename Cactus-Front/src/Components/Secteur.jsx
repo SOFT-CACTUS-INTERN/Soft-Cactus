@@ -6,7 +6,7 @@ const Secteur= ({Title="titre par defaut", para="Lorem ipsum dolor sit amet cons
 
     return(
         <div className={styles.secteur}>
-            <div className={styles.title}><img src={arrow} alt="" /><h1>{Title}</h1></div>
+            <div className={styles.title}><img src={arrow} alt="" className={styles.arrow} /><h1>{Title}</h1></div>
             <p className={styles.para}>{para}</p>
         </div>
     )
