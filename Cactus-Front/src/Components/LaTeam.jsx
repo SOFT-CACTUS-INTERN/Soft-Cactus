@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import styles from '/src/Styles/laTeam.module.css'
 import SpecialText from './SpecialText'
+import { data } from "react-router-dom";
 
 const LaTeam = () => {
     const images = [
-        { src: '/src/assets/gallery/image3.svg', alt: 'abdo' },
-        { src: '/src/assets/gallery/image2.svg', alt: 'hanae' },
-        { src: '/src/assets/gallery/image1.svg', alt: 'ghita' },
-        { src: '/src/assets/gallery/image4.svg', alt: 'mohamed' },
-        { src: '/src/assets/gallery/image4.svg', alt: 'mohamed' }
+        { src: '/src/assets/gallery/image3.svg', alt: 'Ghita NASSAH', dataDescription:'Social media manager'},
+        { src: '/src/assets/gallery/image1.svg', alt: 'Hanae DEKHISSI' , dataDescription:'Fondatrice & Manager'},
+        { src: '/src/assets/gallery/image2.svg', alt: 'Abderrahim RAISSOUNI' , dataDescription:'Designer Graphique'},
+        { src: '/src/assets/gallery/hanae.png', alt: 'Abire JALTI' , dataDescription:'PHOTOGRAPHE & Vidéographe  '},
+        { src: '/src/assets/gallery/image3.svg', alt: 'Btissam MENISSER  ' , dataDescription:'Ingénieur Commercial'}
     ];
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -23,11 +24,11 @@ const LaTeam = () => {
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
                     >
-                        <img className={styles.galleryImage} src={image.src} alt={image.alt} />
+                        <img className={styles.galleryImage} src={image.src} alt={image.alt} loading="lazy" />
                         <div className={styles.galleryOverlay}>
                             <div className={styles.galleryContent}>
                                 <h3 className={styles.galleryTitle}>{image.alt}</h3>
-                                <p className={styles.galleryDescription}>Description text</p>
+                                <p className={styles.galleryDescription}>{image.dataDescription}</p>
                             </div>
                         </div>
                     </div>

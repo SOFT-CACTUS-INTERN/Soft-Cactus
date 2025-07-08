@@ -187,11 +187,11 @@
     font-family: "Bebas Neue" ;
     color: rgba(58, 2, 78, 0.7);
     text-decoration: none;
-    font-size: clamp(18px,1vw,45px);
+    font-size: clamp(18px,1.3vw,45px);
 }
 
 .B2 .coordonnes P a,.B2 .coordonnes P{
-    font-size: clamp(12px,1vw,27px)
+    font-size: clamp(12px,1vw,25px)
 }
 .B2 .SMlinks a img{
     width: 4%;
@@ -204,5 +204,9 @@
 }
 .A2{
     font-size: clamp(12px,2vw,22px) ;
+}
+.B2 .coordonnes img{
+    width: 0.8em;
+    height: 0.8em;
 }
 }

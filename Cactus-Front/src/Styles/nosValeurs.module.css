@@ -94,7 +94,7 @@
     
     font-size: 78px; /*not responsive */
     font-size: clamp(20px,5vw,78px);
-    font-weight: 700;
+    
     font-family: Bebas Neue;
     color: #3A024E;
     display: inline;
