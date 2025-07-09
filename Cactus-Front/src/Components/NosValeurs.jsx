@@ -31,7 +31,7 @@ const NosValeurs= ()=>{
                     <div className={styles.Title} >
                         <div className={styles.titleCercle} />
                         <div className={styles.titleContainer}>
-                            <h1 data-text="AUTONOMIE" >autonomie</h1>
+                            <div className={styles.titre} data-text="AUTONOMIE" >autonomie</div>
                         </div>
                     <img src={vectorOne} className={styles.vectorOne} />        
                     </div>
@@ -50,7 +50,7 @@ const NosValeurs= ()=>{
                 
                 <div>
                     <div className={styles.Title} style={{justifyContent:'flex-end'}}>
-                        <h1 data-text="force">force</h1>
+                        <div data-text="force">force</div>
                         <div className={styles.titleCercle} />
                     <img src={vectorTwo} className={styles.vectorTwo} />        
                     </div>
@@ -84,7 +84,7 @@ const NosValeurs= ()=>{
                 <div>
                     <div className={styles.Title} >
                         <div className={styles.titleCercle} />
-                        <h1 data-text="resistance">resistance</h1>
+                        <div className={styles.titre} data-text="resistance">resistance</div>
                     <img src={vectorOne} className={styles.vectorOne} />        
                     </div>
                     <div className={styles.paragraphe} >
@@ -102,7 +102,7 @@ const NosValeurs= ()=>{
                 
                 <div>
                     <div className={styles.Title} style={{justifyContent:'flex-end'}} >
-                        <h1 data-text="passion">passion</h1>
+                        <div  className={styles.titre} data-text="passion">passion</div>
                         <div className={styles.titleCercle} />
                     <img src={vectorTwo} className={styles.vectorTwo} />        
                     </div>

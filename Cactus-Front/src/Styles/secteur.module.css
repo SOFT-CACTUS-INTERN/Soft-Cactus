@@ -1,3 +1,6 @@
+h1{
+    all: unset;
+}
 .secteur{
     width: 100%;
     padding: 0.75em 0; /*space between each sector vertically*/
@@ -48,5 +51,5 @@ display: inline;
 @media(max-width:786px){
  .para{
     width: calc(100% - 3em); /*5% is a padding applied to that whole section of that page*/
-}   
+ }   
 }

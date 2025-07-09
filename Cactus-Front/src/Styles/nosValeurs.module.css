@@ -90,11 +90,11 @@
     background: transparent;
     flex-shrink: 0; /*IDK about this one*/
 }
-.Title h1{
+.Title .titre{
     
     font-size: 78px; /*not responsive */
     font-size: clamp(20px,5vw,78px);
-    
+    font-weight: 700;
     font-family: Bebas Neue;
     color: #3A024E;
     display: inline;
@@ -106,7 +106,7 @@
   transition: all 0.3s ease; */
 }
 /*---------------------------------------title animation on hover-----------------------*/
-.Title h1::before{
+.Title .titre::before{
      content: attr(data-text);
             position: absolute;
             top: 6px;
@@ -117,7 +117,7 @@
             transform: translateY(10px);
             z-index: -1;
 }
-       .Title h1::after {
+       .Title .titre::after {
             content: attr(data-text);
             position: absolute;
             top: 0;
@@ -130,20 +130,20 @@
             z-index: 1;
         }
         
-       .Title h1:hover {
+       .Title .titre:hover {
             /* Main text becomes transparent */
             color: transparent;
             text-shadow: none;
             transform: translateY(-2px);
         }
 
-        .Title h1:hover::before {
+        .Title .titre:hover::before {
             /* Yellow fill appears */
             opacity: 1;
             transform: translateY(0);
         }
 
-        .Title h1:hover::after {
+        .Title .titre:hover::after {
             /* Purple stroke appears */
             opacity: 1;
         }
