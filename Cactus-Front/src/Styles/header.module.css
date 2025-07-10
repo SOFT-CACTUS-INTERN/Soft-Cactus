@@ -132,7 +132,7 @@ white-space: nowrap;
   overflow-y: auto;
   background-color: rgba(244,231,255,0.3);
   backdrop-filter: blur(12px);
-  transition: background-color .25s;
+  transition: background-color 500ms;
   z-index: 100000;
 }
 .fullMenu{

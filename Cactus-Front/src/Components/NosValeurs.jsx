@@ -50,7 +50,7 @@ const NosValeurs= ()=>{
                 
                 <div>
                     <div className={styles.Title} style={{justifyContent:'flex-end'}}>
-                        <div data-text="force">force</div>
+                        <div className={styles.titre} data-text="force">force</div>
                         <div className={styles.titleCercle} />
                     <img src={vectorTwo} className={styles.vectorTwo} />        
                     </div>

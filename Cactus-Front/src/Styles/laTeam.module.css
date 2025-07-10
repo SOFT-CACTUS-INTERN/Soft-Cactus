@@ -1,3 +1,19 @@
+.Gallery{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10em;
+}
+.headDescription p{
+  font-size: clamp(12px,2vw,20px);
+  text-align: justify;
+  color: #310566;
+  /* width: 60%; */
+  padding: 0 0 2em 5%;
+}
+
 .container {
   width: 100vw;
   display: flex;
@@ -7,13 +23,13 @@
 
 .galleryContainer {
   display: flex;
-  height: 600px;
+  height: clamp(500px,30vw,1600px);
   width: 100vw;
   gap: 8px;
   border-radius: 16px;
   overflow: hidden;
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 .galleryItem {

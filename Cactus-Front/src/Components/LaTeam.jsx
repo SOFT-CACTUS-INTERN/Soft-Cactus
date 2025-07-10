@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from '/src/Styles/laTeam.module.css'
 import SpecialText from './SpecialText'
 import { data } from "react-router-dom";
+import Special from '../Components/SpecialText.jsx'
 
 const LaTeam = () => {
     const images = [
@@ -15,7 +16,18 @@ const LaTeam = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
+    <div className={styles.Gallery}>
+        <Special text={'la team'}></Special>
+        <div className={styles.headText}>
+                <div className={styles.headDescription}>
+                        <p>Chaque membre de notre équipe est
+                             expert dans son domaine.<br /> Ensemble, nous
+                              plaçons votre marque là où elle
+                               doit être : "au sommet."</p>
+                </div>
+        </div>
         <div className={styles.container}>
+            
             <div className={styles.galleryContainer}>
                 {images.map((image, index) => (
                     <div 
@@ -34,7 +46,8 @@ const LaTeam = () => {
                     </div>
                 ))}
             </div>
-        </div>
+         </div>
+    </div>
     );
 };
 
