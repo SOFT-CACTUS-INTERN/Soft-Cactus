@@ -6,8 +6,8 @@
     flex-direction: row;
     align-items:center;
     justify-content: space-around;
-    padding:3.5em 20px 2em;
-    margin-bottom: 100px;
+    padding:3.5em 20px 0.5em;
+    margin-bottom: 50px;
 }
 
 .head .navbar .logo img{
@@ -242,6 +242,6 @@ white-space: nowrap;
 } */
 @media (min-width: 1800px) {
   .navbar {
-    margin-bottom: 10em;
+    margin-bottom: 6em;
   }
 }

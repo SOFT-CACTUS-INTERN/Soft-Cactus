@@ -8,7 +8,7 @@ const QSN= ({TEXT})=>{
 
     return(
     <div className={style.QSN}>
-        <SmallNav />
+        {/* <SmallNav /> */}
         <GradientText  TEXT={'QUI SOMMES NOUS'} />
         <p className={style.definition}>Soft Cactus est un réseau d'agences de communication digitale, implanté à Casablanca 
             depuis 2018 et à Oujda depuis 2021. Spécialisée en marketing digital avec un fort accent sur le conseil.
