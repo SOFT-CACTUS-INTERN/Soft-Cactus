@@ -32,7 +32,7 @@
 }
 
 
-/* From Uiverse.io by Allyhere */ 
+/* hovering effect */ 
 .button a {
   --clr-font-main: hsla(0 0% 20% / 100);
   --btn-bg-1: #8B37CA;
@@ -64,8 +64,4 @@
 
 
 
-@media (prefers-reduced-motion: reduce) {
-  .button a {
-    transition: linear;
-  }
-}
+

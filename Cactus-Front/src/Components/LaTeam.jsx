@@ -3,17 +3,21 @@ import styles from '/src/Styles/laTeam.module.css'
 import SpecialText from './SpecialText'
 import { data } from "react-router-dom";
 import Special from '../Components/SpecialText.jsx'
-
+import image1 from'/src/assets/gallery/image3.svg'
+import image2 from'/src/assets/gallery/image1.svg'
+import image3 from'/src/assets/gallery/image2.svg'
+import image4 from'/src/assets/gallery/hanae.png'
+import image5 from'/src/assets/gallery/image3.svg'
 const LaTeam = () => {
     const images = [
-        { src: '/src/assets/gallery/image3.svg', alt: 'Ghita NASSAH', dataDescription:'Social media manager'},
-        { src: '/src/assets/gallery/image1.svg', alt: 'Hanae DEKHISSI' , dataDescription:'Fondatrice & Manager'},
-        { src: '/src/assets/gallery/image2.svg', alt: 'Abderrahim RAISSOUNI' , dataDescription:'Designer Graphique'},
-        { src: '/src/assets/gallery/hanae.png', alt: 'Abire JALTI' , dataDescription:'PHOTOGRAPHE & Vidéographe  '},
-        { src: '/src/assets/gallery/image3.svg', alt: 'Btissam MENISSER  ' , dataDescription:'Ingénieur Commercial'}
+        { src: image1 , alt: 'Ghita NASSAH', dataDescription:'Social media manager'},
+        { src: image2 , alt: 'Hanae DEKHISSI' , dataDescription:'Fondatrice & Manager'},
+        { src: image3 , alt: 'Abderrahim RAISSOUNI' , dataDescription:'Designer Graphique'},
+        { src: image4 , alt: 'Abire JALTI' , dataDescription:'PHOTOGRAPHE & Vidéographe  '},
+        { src: image5 , alt: 'Btissam MENISSER  ' , dataDescription:'Ingénieur Commercial'}
     ];
 
-    const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [hoveredIndex, setHoveredIndex] = useState(2);
 
     return (
     <div className={styles.Gallery}>
@@ -34,7 +38,7 @@ const LaTeam = () => {
                         key={index}
                         className={`${styles.galleryItem} ${hoveredIndex === index ? styles.expanded : hoveredIndex !== null ? styles.collapsed : ''}`}
                         onMouseEnter={() => setHoveredIndex(index)}
-                        onMouseLeave={() => setHoveredIndex(null)}
+                        onMouseLeave={() => setHoveredIndex(2)}
                     >
                         <img className={styles.galleryImage} src={image.src} alt={image.alt} loading="lazy" />
                         <div className={styles.galleryOverlay}>

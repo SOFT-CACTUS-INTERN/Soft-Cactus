@@ -6,6 +6,7 @@ import FadeIn from '/src/Components/FadeIn.jsx'
 import LaTeam from '../Components/LaTeam.jsx'
 import NotreHistoire from '../Components/NotreHistoire.jsx'
 import PresentSur from '../Components/PresentSur.jsx'
+import ArrowUp from '../Components/ArrowUp.jsx'
 const Agence = () => {
  return (
    <>
@@ -13,8 +14,9 @@ const Agence = () => {
       <Bar />
       <FadeIn delay={0.2}><NosValeurs /></FadeIn>
       <FadeIn delay={0.2}><NotreHistoire /></FadeIn>
-      <FadeIn delay={0.2}><PresentSur /></FadeIn>
+      
       <FadeIn delay={0.2}><LaTeam /></FadeIn>
+      <ArrowUp />
    </>
    )
 };

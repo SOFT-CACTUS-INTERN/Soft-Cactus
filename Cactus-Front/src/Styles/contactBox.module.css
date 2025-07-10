@@ -73,6 +73,10 @@
     padding: 0.5em 1em;
     border: hidden;
     background-image: linear-gradient(to right,#9D04D2,#7E01AA);
+        transition: transform 0.3s ease;
+}
+.myform form button:hover{
+    transform: scale(1.1);
 }
 .coordonnes{
     padding: 3.5em 0;

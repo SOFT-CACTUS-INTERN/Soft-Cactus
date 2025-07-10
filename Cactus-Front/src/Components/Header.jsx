@@ -30,7 +30,7 @@ function Header() {
       <div className={head.links}>
             <ul>
                 <li><NavLink to="/"     className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Accueil</NavLink></li>
-                <li><NavLink to="/agence" className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Nos agence</NavLink></li>
+                <li><NavLink to="/agence" className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Nos agences</NavLink></li>
                 <li><NavLink to="/services"className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Nos services</NavLink></li>
                 <li><NavLink to="/projets" className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>Nos projets</NavLink></li>
                 <li><NavLink to="/contact" className={({ isActive }) => isActive ? `${head.navlink} ${head.active}` : head.navlink}>contact</NavLink></li>

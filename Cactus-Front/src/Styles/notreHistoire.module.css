@@ -1,20 +1,23 @@
+:root{
+  --size: clamp(80px,15vw,200px)
+}
 .Box{
  display: flex;   
  flex-direction: column;
 }
 .btnNext, .btnPrev{
-  font-size: 60px;
+  font-size: clamp(20px,6vw,60px);
   font-family: sans-serif !important;
   color: #2F0052;
   cursor: pointer;
-  margin: 0 20px;
+  margin: 0  30px;
 }
 .title p{
-    font-size: 18px;
+    font-size: clamp(14px,2vw,24px);
     text-align: center;
     color: #2f0052;
     width: 90%;
-    margin: 0 auto 30px;
+    margin: 0 auto clamp(0px,1vw,30px);
 }
 
 .B{
@@ -28,42 +31,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    padding: 40px 0;
+    gap: 2.5em;
 }
 .year > span {
   display: flex;
-  gap: 5px;
+  gap: 60px;
 }
-.year span.prefix, .year span.val {
+
+.year span .prefix{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 180px;
+  font-size: clamp(60px,10vw,180px);
   font-weight: bold;
-  width: 250px;
-  height: 250px;
-}
-.year span.prefix {
+  width: var(--size);
+  height:var(--size);
   color: #2F0052;
+  /* padding-right: 40px ; */  
 }
 .scene {
-  width: 250px;
-  height: 250px;
+  width: var(--size);
+  height:var(--size);
   perspective: 400px;
+  
 }
 .cube{
-    width: 250px;
-  height: 250px;
+  width: var(--size);
+  height:var(--size);
   position: relative;
   transform-style: preserve-3d; /*klchi 3la hadi*/
-  transform: translateZ(-125px);
   transition: transform 1s;
 }
-.cubeFace {
+.cube .cubeFace {
   position: absolute;
-  width: 250px;
-  height: 250px;
-  line-height: 250px;
-  font-size: 180px;
+  width: var(--size);
+  height:var(--size);
+  line-height: var(--size); /*to center vertically*/
+  font-size: calc( clamp(60px,10vw,180px) - clamp(15px,2.5vw,50px)); /*It works don't touch it*/
   font-weight: bold;
   color: white;
   text-align: center;
@@ -72,12 +79,12 @@
 
                                 /*<div className={`${styles.cube} ${styles[`show${face}`]}`}> */
 
-.scene .showFront  { transform: translateZ(-125px) rotateY(   0deg); }
-.scene .showBack  { transform: translateZ(-125px) rotateY( -90deg); }
-.scene .showRight  { transform: translateZ(-125px) rotateY(-180deg); }
-.scene .showLeft   { transform: translateZ(-125px) rotateY(  90deg); }
-.scene .showBottom   { transform: translateZ(-125px) rotateX( -90deg); }
-.scene .showTop { transform: translateZ(-125px) rotateX(  90deg); }
+.scene .showFront  { transform: translateZ(calc(-1 * var(--size)/2)) rotateY(   0deg); }
+.scene .showBack  { transform: translateZ( calc(-1 * var(--size)/2)) rotateY( -90deg); }
+.scene .showRight  { transform: translateZ(calc(-1 * var(--size)/2)) rotateY(-180deg); }
+.scene .showLeft   { transform: translateZ(calc(-1 * var(--size)/2)) rotateY(  90deg); }
+.scene .showBottom   { transform: translateZ(calc(-1 * var(--size)/2)) rotateX( -90deg); }
+.scene .showTop { transform: translateZ(calc(-1 * var(--size)/2)) rotateX(  90deg); }
 
 .cubeFaceFront   { display: block; ;background:#FF00C4}
 .cubeFaceBack   { background:#FF00C4}
@@ -86,22 +93,26 @@
 .cubeFaceTop         { background:#FF00C4}
 .cubeFaceBottom { background:#FF00C4}
 
-.cubeFaceFront      { transform: rotateY(  0deg) translateZ(125px); }
-.cubeFaceBack      { transform: rotateY( 90deg) translateZ(125px); }
-.cubeFaceRight       { transform: rotateY(180deg) translateZ(125px); }
-.cubeFaceLeft       { transform: rotateY(-90deg) translateZ(125px); }
-.cubeFaceBottom        { transform: rotateX( 90deg) translateZ(125px); }
-.cubeFaceTop { transform: rotateX(-90deg) translateZ(125px); }
+.cubeFaceFront      { transform: rotateY(  0deg) translateZ(calc(var(--size)/2)); }
+.cubeFaceBack      { transform: rotateY( 90deg) translateZ(calc(var(--size)/2)); }
+.cubeFaceRight       { transform: rotateY(180deg) translateZ(calc(var(--size)/2)); }
+.cubeFaceLeft       { transform: rotateY(-90deg) translateZ(calc(var(--size)/2)); }
+.cubeFaceBottom        { transform: rotateX( 90deg) translateZ(calc(var(--size)/2)); }
+.cubeFaceTop { transform: rotateX(-90deg) translateZ(calc(var(--size)/2)); }
 /*----------------------years at the bottom ------------------*/
 .years ul{
+  
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 60px;
-  padding-top: 10px;
-  font-size: 20px;
+  gap: 10px 60px;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  font-size: clamp(14px,2vw,20px);
   color: #2F0052;
   }
   .years ul li{
@@ -114,3 +125,27 @@
     color: #7301ff;
   }
   /*----------------------DONE years at the bottom ------------------*/
+@media (max-width:1500px) {
+
+  .years ul{
+  gap: 10px 60px;
+  }
+  
+.year > span {
+  gap: clamp(10px, 2.5vw, 50px);
+  }
+
+}
+@media (min-width:850px) and (max-width : 1500px) {
+    .year{
+    gap: 1.5em;
+  }}
+  @media (max-width:810px){
+    .years ul{
+      gap: 5dpx 20px;
+    }
+    .year{
+    padding: 20px 0;
+  }
+  
+  }

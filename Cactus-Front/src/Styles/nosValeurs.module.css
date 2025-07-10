@@ -37,9 +37,9 @@
     z-index: -1;
     right: 0;
     top: 0;
-    width: 15vw;
+    width: 20vw;
     min-width: 7em;
-    max-width: 15em; /*modifiable until i see the big screen's respponsivity*/
+    max-width: 100em; /*modifiable until i see the big screen's respponsivity*/
 
 }
 .NosValeurs .cercleTwo{
@@ -47,17 +47,17 @@
     z-index: -1;
     left: 0;
     top: 30%;
-    width: 15vw;
+    width: 20vw;
     min-width: 7em;
-    max-width: 15em; /*modifiable until i see the big screen's respponsivity*/
+    max-width: 100em; /*modifiable until i see the big screen's respponsivity*/
 }
 .NosValeurs .cercleThree{
     position: absolute;
     z-index: -1;
     right: 0;
-    width: 15vw;
+    width: 20vw;
     min-width: 7em;
-    max-width: 15em; /*modifiable until i see the big screen's respponsivity*/
+    max-width: 100em; /*modifiable until i see the big screen's respponsivity*/
     bottom: 0;
 }
 .One svg{
@@ -94,7 +94,7 @@
     
     font-size: 78px; /*not responsive */
     font-size: clamp(20px,5vw,78px);
-    font-weight: 700;
+    
     font-family: Bebas Neue;
     color: #3A024E;
     display: inline;
@@ -115,7 +115,7 @@
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             opacity: 0;
             transform: translateY(10px);
-            z-index: -1;
+            z-index: 11;
 }
        .Title .titre::after {
             content: attr(data-text);
@@ -151,32 +151,34 @@
 .paragraphe p{
     
     font-size: clamp(12px, 1.5vw,34px);
-    font-weight: 300 !important;
+    font-weight: 200 !important;
     /*font-family ?*/
+    font-family: Oswald;
     color: #3A024E;
     max-width: 30vw; /*not responsive*/
     min-width: 15em;
     text-transform: uppercase;
-    line-height: 100%;
-    letter-spacing: 1%;
+    
+    
     /*maybe a border-radius ?*/    
     padding-left: 1rem;           /* Space between border and text */
     position: relative;
-    font-weight: 500;  
+    
     margin-top: -0.3em;
 }
 .paragraphe2 p{
     margin-top: 0.5em;
     font-size: clamp(12px, 1.5vw,30px);
-    font-weight: 300 !important;
+    font-weight: 200 !important;
+    font-family: Oswald;
     /*font-family ?*/
     color: #3A024E;
     max-width: 30vw; /*not responsive*/
     min-width: 15em;
     text-transform: uppercase;
     text-align: right;
-    line-height: 100%;
-    letter-spacing: 1%;
+    
+    
     /*maybe a border-radius ?*/    
     padding-right: 1rem;           /* Space between border and text */
     position: relative;
@@ -243,6 +245,12 @@
 .Title {
     gap: 10px;
 }
+.NosValeurs .cercleOne, .cercleTwo, .cercleThree {
+    width: 10vw;
+    min-width: 7em;
+    max-width: 100em; 
+}
+
 }
 
 @media (max-width:450px){
