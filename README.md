@@ -1,4 +1,8 @@
 
+<p align="center">
+  <img src="./Cactus-Front/src/assets/Logo.svg" alt="LogoSoftCactus" width="700"/>
+</p>
+
 # Soft Cactus 🌵
 
 This project was made by me Movved (Mohammed BELLATRACH) as a part of my internship program at SoftCactus.
