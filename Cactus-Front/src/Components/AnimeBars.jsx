@@ -1,6 +1,9 @@
 import React from "react";
 import style from '/src/Styles/bar.module.css'
 
+/*==========================The infinite moving bar in nos agences page========================  */
+//If you wish  You can easily add or change the phrase in the bars
+
 const Bar = () => {
     const slogan = "You are not alone";
       const slogans = Array(20).fill(slogan);

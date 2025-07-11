@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styles from '/src/Styles/laTeam.module.css'
-import SpecialText from './SpecialText'
-import { data } from "react-router-dom";
 import Special from '../Components/SpecialText.jsx'
 import image1 from'/src/assets/gallery/image3.svg'
 import image2 from'/src/assets/gallery/image1.svg'
@@ -9,6 +7,8 @@ import image3 from'/src/assets/gallery/image2.svg'
 import image4 from'/src/assets/gallery/hanae.png'
 import image5 from'/src/assets/gallery/image3.svg'
 const LaTeam = () => {
+
+/*==================you can add any image just import it up there and add in to the array========================== */
     const images = [
         { src: image1 , alt: 'Ghita NASSAH', dataDescription:'Social media manager'},
         { src: image2 , alt: 'Hanae DEKHISSI' , dataDescription:'Fondatrice & Manager'},

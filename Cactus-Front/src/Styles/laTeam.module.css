@@ -29,7 +29,6 @@
   width: 100vw;
   gap: 16px;
   overflow: hidden;
-  
 }
 
 .galleryItem {
@@ -102,7 +101,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0 0 8px 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /*with or without ?*/
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .galleryDescription {
@@ -114,7 +113,7 @@
 }
 /*--------------------------------FIN contenue dans les images-------------------------------*/
 /* --------------------------------------Responsive Design ----------------------------------------*/
-@media (min-width: 768px)  and (max-width:1300px){
+@media (min-width: 768px)  and (max-width:1000px){
   .galleryItem.expanded {
     flex: 0.4;
   }
@@ -122,6 +121,18 @@
     flex: 1;
   }
 }
+
+@media (min-width: 1000px)  and (max-width:1350px){
+  .galleryItem.expanded {
+    flex: 0.3;
+  }
+}
+@media (min-width: 1350px)  and (max-width:1800px){
+.galleryItem.expanded {
+    flex: 0.2;
+  }
+}
+
 @media (max-width: 768px) {
   .Gallery{
    margin-bottom: 5em;
