@@ -13,7 +13,7 @@ You can see the routing in App.jsx I USED A Layout page with Outlet from react-r
 ---------------------------------------------------------------------
 ## 🌴 React tree :
 there are many components in the Componenets folder, each component is styled with css module in the Styles folder.
-
+```
 📦src
  ┣ 📂Components
  ┃ ┣ 📜AnimeBars.jsx
@@ -74,3 +74,4 @@ there are many components in the Componenets folder, each component is styled wi
  ┣ 📜App.jsx
  ┣ 📜index.css
  ┗ 📜main.jsx
+```
