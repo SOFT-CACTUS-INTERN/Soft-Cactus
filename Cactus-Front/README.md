@@ -12,7 +12,7 @@
 You can see the routing in App.jsx I USED A Layout page with Outlet from react-router-dom
 ---------------------------------------------------------------------
 ## 🌴 React tree :
-there are many components in the Componenets folder, each component is styled with css module in the Styles folder.
+there are many components in the Componenets folder, each component is styled with css module in the Styles folder and added to its right page in the pages folder.
 ```
 📦src
  ┣ 📂Components
