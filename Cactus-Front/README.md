@@ -1,6 +1,10 @@
+<p align= "center">
+<img width="580" height="320" alt="reactLogo" src="https://github.com/user-attachments/assets/4f46b02d-86cb-4e9e-92ec-bbc429ab423b" />
+</p>
+
 ## basic infos
-1-Set the custom colors themes in the global css file index.css
-2- imported the main fonts in index.html
+1-Set the custom colors themes in the global css file index.css and 
+the main fonts in index.html
 3-font-family: "Montserrat","Bebas Neue",Arial, Helvetica, sans-serif; + Oswald
 
 ---------------------------------------------------------------------------------------------
