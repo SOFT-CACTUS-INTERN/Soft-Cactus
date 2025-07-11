@@ -9,8 +9,7 @@ This project was made by me Movved (Mohammed BELLATRACH) as a part of my interns
 
 ## 📸 Demo
 
-![App Screenshot](./screenshotDemo.png)  
-[Live Demo](https://demo-softcactus.netlify.app.com)
+[Live Demo](https://demo-softcactus.netlify.app)
 
 ---
 
