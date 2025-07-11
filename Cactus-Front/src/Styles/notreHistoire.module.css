@@ -149,3 +149,8 @@
   }
   
   }
+  @media (max-width : 340px) {
+   .years ul {
+      gap: 2px 15px;
+   } 
+  }

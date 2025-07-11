@@ -57,7 +57,7 @@ function Header() {
             <div className={head.fullMenu}>
               <ul>
                   <li><NavLink to="/" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}        onClick={toggleMobileMenu}>Accueil</NavLink></li>
-                  <li><NavLink to="/agence" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}  onClick={toggleMobileMenu}>Nos agence</NavLink></li>
+                  <li><NavLink to="/agence" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}  onClick={toggleMobileMenu}>Nos agences</NavLink></li>
                   <li><NavLink to="/services"className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink} onClick={toggleMobileMenu}>Nos services</NavLink></li>
                   <li><NavLink to="/projets" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}  onClick={toggleMobileMenu}>Nos projets</NavLink></li>
                   <li><NavLink to="/contact" className={({ isActive }) => isActive ? `${head.navlink} ${head.mobileActive}` : head.navlink}  onClick={toggleMobileMenu}>contact</NavLink></li>
