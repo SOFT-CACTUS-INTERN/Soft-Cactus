@@ -9,7 +9,6 @@ import image4 from '/src/assets/gallery/image4.svg'
 import right from '/src/assets/icons/scroll/toRight.svg'
 import left from '/src/assets/icons/scroll/toLeft.svg'
 import ellipse from '/src/assets/decor/ellipse.svg'
-import Draggable from "react-draggable";
 import { useState ,useRef } from "react";
 
 
