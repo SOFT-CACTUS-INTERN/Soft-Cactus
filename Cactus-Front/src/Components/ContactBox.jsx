@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const ContactBox = ()=>{
 
 
-      const [formData, setFormData] = useState({
+const [formData, setFormData] = useState({
     fullName: '',
     societyName:'',
     projectName:'',
